@@ -56,6 +56,28 @@ SEARCH_URLS = [
     "https://www.2dehands.be/l/fietsen-en-brommers/fietsen-racefietsen/q/tt%2Bfiets/",
 ]
 
+def parse_price_value_from_text(value):
+    """
+    Parseert uitsluitend de tekst uit het officiële prijsveld van
+    2dehands.
+    """
+
+    if not value:
+        return None
+
+    value = normalize(value)
+
+    match = re.search(
+        r"(?:€\\s*)?([\\d\\.,]+)\\s*(?:euro|€)?",
+        value,
+        re.IGNORECASE,
+    )
+
+    if not match:
+        return None
+
+    return parse_price_value(match.group(1))
+
 
 # ============================================================
 # LOCATION FILTER
@@ -463,55 +485,59 @@ def get_price(text):
 # LOCATION
 # ============================================================
 
-def detect_location(text):
+def detect_location(location_text):
     """
-    Alleen West- en Oost-Vlaanderen worden geaccepteerd.
+    Controleert uitsluitend de officiële locatie die 2dehands in de
+    advertentie toont.
 
-    Eerst wordt expliciete provincie-informatie gezocht.
-    Daarna zoeken we naar bekende gemeenten/steden.
+    Plaatsnamen uit de beschrijving kunnen hierdoor niet langer
+    per ongeluk als advertentielocatie worden gebruikt.
     """
 
-    text = normalize(text)
+    location_text = normalize(location_text)
 
-    # Explicit province
+    if not location_text:
+        return {
+            "allowed": False,
+            "province": None,
+            "location": None,
+            "location_raw": None,
+        }
+
     if (
-        "west-vlaanderen" in text
-        or "west vlaanderen" in text
+        "west-vlaanderen" in location_text
+        or "west vlaanderen" in location_text
     ):
         return {
             "allowed": True,
             "province": "West-Vlaanderen",
-            "location": "West-Vlaanderen",
+            "location": location_text.title(),
+            "location_raw": location_text,
         }
 
     if (
-        "oost-vlaanderen" in text
-        or "oost vlaanderen" in text
+        "oost-vlaanderen" in location_text
+        or "oost vlaanderen" in location_text
     ):
         return {
             "allowed": True,
             "province": "Oost-Vlaanderen",
-            "location": "Oost-Vlaanderen",
+            "location": location_text.title(),
+            "location_raw": location_text,
         }
 
-    # Municipality / city
     for location in sorted(
         TARGET_LOCATIONS,
         key=len,
         reverse=True,
     ):
-
         pattern = (
             r"(?<![a-z])"
             + re.escape(location)
             + r"(?![a-z])"
         )
 
-        if re.search(
-            pattern,
-            text,
-        ):
-
+        if re.search(pattern, location_text):
             if location in WEST_FLANDERS_LOCATIONS:
                 province = "West-Vlaanderen"
             else:
@@ -520,13 +546,15 @@ def detect_location(text):
             return {
                 "allowed": True,
                 "province": province,
-                "location": location.title(),
+                "location": location_text.title(),
+                "location_raw": location_text,
             }
 
     return {
         "allowed": False,
         "province": None,
         "location": None,
+        "location_raw": location_text,
     }
 
 
@@ -641,6 +669,20 @@ def fetch(url):
 # ============================================================
 
 def get_listing_details(url):
+    """
+    Haalt de advertentiegegevens op.
+
+    PRIJS:
+        .ListingHeader-module-price
+
+    LOCATIE:
+        .SellerLocationSection-module-locationName
+        (met de officiële hz-Text classes)
+
+    De volledige pagina-tekst wordt uitsluitend gebruikt voor
+    inhoudelijke detectie zoals TT, powermeter en maat.
+    """
+
     html = fetch(url)
 
     soup = BeautifulSoup(
@@ -648,16 +690,30 @@ def get_listing_details(url):
         "html.parser",
     )
 
-    text = normalize(
+    full_text = normalize(
         soup.get_text(
             " ",
             strip=True,
         )
     )
 
+    # ------------------------------------------------------------
+    # TITLE
+    # ------------------------------------------------------------
+
     title = ""
 
-    if soup.title:
+    og_title = soup.find(
+        "meta",
+        attrs={"property": "og:title"},
+    )
+
+    if og_title and og_title.get("content"):
+        title = normalize(
+            og_title.get("content")
+        )
+
+    if not title and soup.title:
         title = normalize(
             soup.title.get_text(
                 " ",
@@ -665,14 +721,56 @@ def get_listing_details(url):
             )
         )
 
-    # Optional JSON-LD extraction.
+    # ------------------------------------------------------------
+    # OFFICIËLE PRIJS UIT DE DOM
+    # ------------------------------------------------------------
+
+    price_element = soup.select_one(
+        ".ListingHeader-module-price"
+    )
+
+    price_text = ""
+
+    if price_element:
+        price_text = normalize(
+            price_element.get_text(
+                " ",
+                strip=True,
+            )
+        )
+
+    price = parse_price_value_from_text(
+        price_text
+    )
+
+    # ------------------------------------------------------------
+    # OFFICIËLE LOCATIE UIT DE DOM
+    # ------------------------------------------------------------
+
+    location_element = soup.select_one(
+        ".SellerLocationSection-module-locationName"
+    )
+
+    location_raw = ""
+
+    if location_element:
+        location_raw = normalize(
+            location_element.get_text(
+                " ",
+                strip=True,
+            )
+        )
+
+    # ------------------------------------------------------------
+    # JSON-LD
+    # ------------------------------------------------------------
+
     json_ld_data = []
 
     for script in soup.find_all(
         "script",
         type="application/ld+json",
     ):
-
         try:
             raw = script.string
 
@@ -680,7 +778,6 @@ def get_listing_details(url):
                 continue
 
             parsed = json.loads(raw)
-
             json_ld_data.append(parsed)
 
         except Exception:
@@ -689,7 +786,15 @@ def get_listing_details(url):
     return {
         "url": url,
         "title": title,
-        "text": text,
+
+        # Officiële DOM-velden.
+        "price": price,
+        "price_text": price_text,
+        "location_raw": location_raw,
+
+        # Alleen voor inhoudelijke detectie.
+        "text": full_text,
+
         "json_ld": json_ld_data,
     }
 
@@ -716,8 +821,11 @@ def evaluate_listing(listing):
     # --------------------------------------------------------
     # PRICE
     # --------------------------------------------------------
+    #
+    # Rechtstreeks uit .ListingHeader-module-price.
+    # Niet uit de vrije advertentietekst.
 
-    price = get_price(text)
+    price = listing.get("price")
 
     if price is None:
         return {
@@ -735,14 +843,21 @@ def evaluate_listing(listing):
     # --------------------------------------------------------
     # LOCATION
     # --------------------------------------------------------
+    #
+    # Rechtstreeks uit .SellerLocationSection-module-locationName.
+    # Niet uit de beschrijving.
 
-    location = detect_location(text)
+    location = detect_location(
+        listing.get("location_raw", "")
+    )
 
     if not location["allowed"]:
         return {
             "match": False,
             "reason": "buiten_regio",
             "price": price,
+            "location": location.get("location"),
+            "location_raw": location.get("location_raw"),
         }
 
     # --------------------------------------------------------
@@ -1135,6 +1250,9 @@ def main():
                 ),
                 "last_location": result.get(
                     "location"
+                ),
+                "last_location_raw": result.get(
+                    "location_raw"
                 ),
                 "last_province": result.get(
                     "province"
