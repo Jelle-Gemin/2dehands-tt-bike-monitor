@@ -10,46 +10,199 @@ import requests
 from bs4 import BeautifulSoup
 
 
+# ============================================================
+# CONFIGURATION
+# ============================================================
+
 BASE_URL = "https://www.2dehands.be"
 
-# =========================
-# CONFIG
-# =========================
+# Maximum aankoopprijs.
+MAX_BUDGET = int(os.getenv("MAX_BUDGET", "1700"))
 
-MIN_PRICE = 1300
-MAX_PRICE = 1800
-
-TARGET_MIN_PRICE = 1500
-TARGET_MAX_PRICE = 1700
-
+# Rider profile
 RIDER_HEIGHT_CM = 178
 RIDER_INSEAM_CM = 86
 
+# Behaviour flags
 ONLY_NEW = os.getenv("ONLY_NEW", "true").lower() == "true"
 TEST_MODE = os.getenv("TEST_MODE", "false").lower() == "true"
 DRY_RUN = os.getenv("DRY_RUN", "true").lower() == "true"
 
+# Maximum number of individual listings inspected per run.
+MAX_LISTINGS_PER_RUN = int(
+    os.getenv("MAX_LISTINGS_PER_RUN", "75")
+)
+
+# Delay between requests.
+REQUEST_DELAY_SECONDS = float(
+    os.getenv("REQUEST_DELAY_SECONDS", "1.5")
+)
+
 SEEN_FILE = Path("seen.json")
+
+
+# ============================================================
+# 2DEHANDS SEARCHES
+# ============================================================
 
 SEARCH_URLS = [
     "https://www.2dehands.be/l/fietsen-en-brommers/fietsen-racefietsen/q/tijdritfiets/",
     "https://www.2dehands.be/l/fietsen-en-brommers/fietsen-racefietsen/q/tijdrit%2Bfiets/",
     "https://www.2dehands.be/l/fietsen-en-brommers/fietsen-racefietsen/q/tijdrit/",
+    "https://www.2dehands.be/l/fietsen-en-brommers/fietsen-racefietsen/q/triatlon/",
+    "https://www.2dehands.be/l/fietsen-en-brommers/fietsen-racefietsen/q/triathlon/",
 ]
 
-TARGET_PROVINCES = [
+
+# ============================================================
+# HARD LOCATION FILTER
+# ============================================================
+
+# We accepteren uitsluitend West- en Oost-Vlaanderen.
+#
+# De provincienaam zelf wordt gecontroleerd wanneer die in de
+# advertentie voorkomt.
+#
+# Daarnaast gebruiken we gemeenten/steden, omdat 2dehands vaak
+# alleen de plaatsnaam toont.
+
+WEST_FLANDERS_LOCATIONS = {
+    "aalbeke",
+    "alveringem",
+    "ardooie",
+    "avelgem",
+    "beernem",
+    "blankenberge",
+    "bovekerke",
+    "bredene",
+    "brugge",
+    "damme",
+    "de haan",
+    "de panne",
+    "deerlijk",
+    "diksmuide",
+    "gistel",
+    "gooik",  # harmless fallback; can remove if desired
+    "harelbeke",
+    "heist",
+    "heuvelland",
+    "houthulst",
+    "ichtegem",
+    "ingelmunster",
+    "jabbeke",
+    "knokke",
+    "koekelare",
+    "koksijde",
+    "kortemark",
+    "kortrijk",
+    "langemark",
+    "langemark-poelkapelle",
+    "ledegem",
+    "leper",
+    "ieper",
+    "lo-reninge",
+    "lo-reninge",
+    "menen",
+    "meulebeke",
+    "middelkerke",
+    "nieuwpoort",
+    "oostkamp",
+    "oostende",
+    "pittem",
+    "poperinge",
+    "roeselare",
+    "ruiselede",
+    "spiere-helkijn",
+    "staden",
+    "torhout",
+    "veurne",
+    "vingem",
+    "waregem",
+    "wervik",
+    "wevelgem",
+    "wingene",
+    "zedelgem",
+    "zonnebeke",
+    "zuienkerke",
+    "zwevegem",
+}
+
+EAST_FLANDERS_LOCATIONS = {
+    "aalst",
+    "aardenburg",
+    "assene",
+    "assenede",
+    "brakel",
+    "deinze",
+    "destelbergen",
+    "denderleeuw",
+    "dendermonde",
+    "de pinte",
+    "evergem",
+    "geraardsbergen",
+    "gente",
+    "gent",
+    "grembergen",
+    "hamme",
+    "haaltert",
+    "herzele",
+    "kluisbergen",
+    "kruisem",
+    "lede",
+    "lochristi",
+    "lokeren",
+    "maarkedal",
+    "maldegem",
+    "merelbeke",
+    "nazareth",
+    "nevele",
+    "ninove",
+    "oudenaarde",
+    "ronse",
+    "sint-amandsberg",
+    "sint-laureins",
+    "sint-niklaas",
+    "sint-niklaas",
+    "stekene",
+    "temse",
+    "waarschoot",
+    "wachtebeke",
+    "wetteren",
+    "wichelen",
+    "zele",
+    "zottegem",
+    "zwalm",
+}
+
+TARGET_PROVINCES = {
     "west-vlaanderen",
+    "west vlaanderen",
     "oost-vlaanderen",
-]
+    "oost vlaanderen",
+}
 
-TT_KEYWORDS = [
+TARGET_LOCATIONS = (
+    WEST_FLANDERS_LOCATIONS
+    | EAST_FLANDERS_LOCATIONS
+)
+
+
+# ============================================================
+# TT / TRIATHLON KEYWORDS
+# ============================================================
+
+TT_KEYWORDS = {
     "tijdrit",
     "tijdritfiets",
+    "tijdrit fiets",
     "triatlon",
     "triathlon",
     "tt bike",
     "tt-bike",
+    "tt fiets",
     "chrono",
+    "time trial",
+    "timetrial",
     "timemachine",
     "speed concept",
     "shiv",
@@ -57,157 +210,417 @@ TT_KEYWORDS = [
     "plasma",
     "p3",
     "p5",
-]
+    "slice",
+    "speedmax",
+    "trinity",
+    "foil tt",
+    "aeroad tt",
+}
 
-POWER_KEYWORDS = [
+
+# ============================================================
+# POWER METER KEYWORDS
+# ============================================================
+
+POWER_KEYWORDS = {
     "powermeter",
     "power meter",
-    "power meter",
+    "power-meter",
     "vermogensmeter",
+    "vermogens meter",
     "wattagemeter",
     "wattage meter",
-    "4iiii",
+    "wattagemeter",
     "4iiii",
     "stages",
     "quarq",
     "rotor 2inpower",
     "rotor inpower",
+    "rotor power",
     "favero assioma",
+    "assioma",
     "garmin rally",
     "garmin vector",
     "sram axs power",
     "sram red axs power",
+    "sram force axs power",
     "shimano power meter",
     "ultegra r8100-p",
     "dura ace r9200-p",
-]
+    "r8100-p",
+    "r9200-p",
+}
 
-SIZE_KEYWORDS = [
+
+# ============================================================
+# SIZE KEYWORDS
+# ============================================================
+
+SIZE_KEYWORDS = {
     "maat m",
     "maat medium",
+    "size m",
+    "size medium",
     "maat 54",
     "maat 55",
     "maat 56",
-    "size m",
-    "size medium",
+    "size 54",
+    "size 55",
+    "size 56",
     "54 cm",
     "55 cm",
     "56 cm",
-]
+}
 
 
-# =========================
-# HELPERS
-# =========================
+# ============================================================
+# HTTP
+# ============================================================
+
+SESSION = requests.Session()
+
+SESSION.headers.update({
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/139.0 Safari/537.36"
+    ),
+    "Accept-Language": "nl-BE,nl;q=0.9,en;q=0.8",
+    "Accept": (
+        "text/html,application/xhtml+xml,"
+        "application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+    ),
+})
+
+
+# ============================================================
+# GENERAL HELPERS
+# ============================================================
 
 def normalize(text):
-    return re.sub(r"\s+", " ", text.lower()).strip()
+    """
+    Normaliseert tekst zodat zoeken op keywords betrouwbaarder wordt.
+    """
+    if not text:
+        return ""
+
+    text = text.lower()
+
+    # Non-breaking spaces etc.
+    text = text.replace("\xa0", " ")
+
+    # Meerdere whitespace characters naar één spatie.
+    text = re.sub(r"\s+", " ", text)
+
+    return text.strip()
 
 
 def load_seen():
+    """
+    seen.json bevat:
+
+    {
+        "URL": {
+            "last_price": 1500,
+            "last_title": "...",
+            "last_location": "...",
+            "matched": true
+        }
+    }
+    """
+
     if not SEEN_FILE.exists():
-        return set()
+        return {}
 
     try:
-        return set(json.loads(SEEN_FILE.read_text()))
-    except Exception:
-        return set()
+        data = json.loads(
+            SEEN_FILE.read_text(
+                encoding="utf-8"
+            )
+        )
+
+        if isinstance(data, dict):
+            return data
+
+    except Exception as exc:
+        print(
+            f"WAARSCHUWING: seen.json kon niet "
+            f"worden gelezen: {exc}"
+        )
+
+    return {}
 
 
 def save_seen(seen):
     SEEN_FILE.write_text(
-        json.dumps(sorted(seen), indent=2, ensure_ascii=False)
+        json.dumps(
+            seen,
+            indent=2,
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
     )
+
+
+def contains_any(text, keywords):
+    """
+    Controleert of één van de keywords in de tekst voorkomt.
+    """
+
+    text = normalize(text)
+
+    return any(
+        keyword in text
+        for keyword in keywords
+    )
+
+
+# ============================================================
+# PRICE
+# ============================================================
+
+def parse_price_value(value):
+    """
+    Probeert Belgische prijsnotaties te interpreteren.
+
+    Voorbeelden:
+        1.500
+        1.500,00
+        1500
+        1500,00
+    """
+
+    value = value.strip()
+    value = value.replace("€", "")
+    value = value.replace("EUR", "")
+    value = value.strip()
+
+    if "." in value and "," in value:
+        # 1.500,00
+        value = value.replace(".", "")
+        value = value.replace(",", ".")
+
+    elif "," in value:
+        # 1500,00
+        value = value.replace(",", ".")
+
+    elif value.count(".") == 1:
+        left, right = value.split(".")
+
+        # 1.500 -> 1500
+        if len(right) == 3:
+            value = left + right
+
+    try:
+        return float(value)
+    except ValueError:
+        return None
 
 
 def get_price(text):
     """
-    Detect common Belgian price formats:
-    € 1.500
-    €1.500,00
-    1500 euro
+    Zoekt een prijs in de advertentietekst.
+
+    We proberen eerst expliciete euro-notaties.
     """
 
     patterns = [
-        r"€\s*([\d\.\,]+)",
-        r"([\d\.\,]+)\s*euro",
+        r"€\s*([\d\.,]+)",
+        r"([\d\.,]+)\s*euro",
+        r"prijs\s*[:\-]?\s*€?\s*([\d\.,]+)",
     ]
 
     for pattern in patterns:
-        match = re.search(pattern, text, re.IGNORECASE)
 
-        if not match:
-            continue
+        matches = re.findall(
+            pattern,
+            text,
+            re.IGNORECASE,
+        )
 
-        value = match.group(1)
+        for match in matches:
 
-        # Belgian format: 1.500,00
-        if "." in value and "," in value:
-            value = value.replace(".", "").replace(",", ".")
-        elif "," in value:
-            value = value.replace(",", ".")
-        elif value.count(".") == 1:
-            left, right = value.split(".")
+            price = parse_price_value(match)
 
-            if len(right) == 3:
-                value = value.replace(".", "")
+            if price is None:
+                continue
 
-        try:
-            return float(value)
-        except ValueError:
-            pass
+            # Sanity check.
+            # We willen geen jaartallen of andere getallen.
+            if 50 <= price <= 100000:
+                return price
 
     return None
 
 
-def contains_any(text, keywords):
-    return any(keyword in text for keyword in keywords)
+# ============================================================
+# LOCATION
+# ============================================================
 
+def detect_location(text):
+    """
+    Geeft terug:
+
+        {
+            "allowed": True/False,
+            "province": "...",
+            "location": "..."
+        }
+
+    Provincienaam heeft voorrang.
+    Daarna controleren we gemeenten/steden.
+    """
+
+    text = normalize(text)
+
+    # 1. Expliciete provincie
+    if (
+        "west-vlaanderen" in text
+        or "west vlaanderen" in text
+    ):
+        return {
+            "allowed": True,
+            "province": "West-Vlaanderen",
+            "location": "West-Vlaanderen",
+        }
+
+    if (
+        "oost-vlaanderen" in text
+        or "oost vlaanderen" in text
+    ):
+        return {
+            "allowed": True,
+            "province": "Oost-Vlaanderen",
+            "location": "Oost-Vlaanderen",
+        }
+
+    # 2. Plaatsnaam
+    #
+    # We zoeken bewust als woordgrens om bijvoorbeeld
+    # "gent" niet te laten matchen met een ander woord.
+
+    for location in sorted(
+        TARGET_LOCATIONS,
+        key=len,
+        reverse=True,
+    ):
+
+        pattern = (
+            r"(?<![a-z])"
+            + re.escape(location)
+            + r"(?![a-z])"
+        )
+
+        if re.search(pattern, text):
+            if location in WEST_FLANDERS_LOCATIONS:
+                province = "West-Vlaanderen"
+            else:
+                province = "Oost-Vlaanderen"
+
+            return {
+                "allowed": True,
+                "province": province,
+                "location": location.title(),
+            }
+
+    return {
+        "allowed": False,
+        "province": None,
+        "location": None,
+    }
+
+
+# ============================================================
+# TT DETECTION
+# ============================================================
+
+def is_tt_or_triathlon(text):
+    return contains_any(
+        text,
+        TT_KEYWORDS,
+    )
+
+
+# ============================================================
+# POWER METER
+# ============================================================
+
+def has_power_meter(text):
+    return contains_any(
+        text,
+        POWER_KEYWORDS,
+    )
+
+
+# ============================================================
+# SIZE
+# ============================================================
+
+def has_probable_size(text):
+    return contains_any(
+        text,
+        SIZE_KEYWORDS,
+    )
+
+
+# ============================================================
+# SEARCH PAGE PARSER
+# ============================================================
 
 def extract_listing_links(html):
-    soup = BeautifulSoup(html, "html.parser")
+    soup = BeautifulSoup(
+        html,
+        "html.parser",
+    )
 
-    results = []
+    results = {}
 
-    for link in soup.find_all("a", href=True):
+    for link in soup.find_all(
+        "a",
+        href=True,
+    ):
+
         href = link["href"]
 
         if "/v/" not in href:
             continue
 
-        absolute = urljoin(BASE_URL, href)
+        url = urljoin(
+            BASE_URL,
+            href,
+        )
 
-        title = link.get_text(" ", strip=True)
+        # Strip query parameters where possible.
+        url = url.split("?")[0]
+
+        title = link.get_text(
+            " ",
+            strip=True,
+        )
 
         if not title:
-            title = link.get("aria-label", "")
+            title = link.get(
+                "aria-label",
+                "",
+            )
 
-        results.append({
-            "url": absolute,
+        results[url] = {
+            "url": url,
             "title": title,
-        })
+        }
 
-    # Deduplicate
-    unique = {}
+    return list(
+        results.values()
+    )
 
-    for item in results:
-        unique[item["url"]] = item
 
-    return list(unique.values())
-
+# ============================================================
+# FETCH
+# ============================================================
 
 def fetch(url):
-    headers = {
-        "User-Agent": (
-            "Mozilla/5.0 (compatible; "
-            "TTBikeMonitor/1.0; +https://github.com/)"
-        ),
-        "Accept-Language": "nl-BE,nl;q=0.9,en;q=0.8",
-    }
-
-    response = requests.get(
+    response = SESSION.get(
         url,
-        headers=headers,
         timeout=30,
     )
 
@@ -216,87 +629,203 @@ def fetch(url):
     return response.text
 
 
+# ============================================================
+# LISTING DETAILS
+# ============================================================
+
 def get_listing_details(url):
     html = fetch(url)
-    soup = BeautifulSoup(html, "html.parser")
 
-    text = normalize(soup.get_text(" ", strip=True))
+    soup = BeautifulSoup(
+        html,
+        "html.parser",
+    )
+
+    text = normalize(
+        soup.get_text(
+            " ",
+            strip=True,
+        )
+    )
 
     title = ""
 
     if soup.title:
-        title = soup.title.get_text(" ", strip=True)
+        title = normalize(
+            soup.title.get_text(
+                " ",
+                strip=True,
+            )
+        )
+
+    # Try to find JSON-LD product/listing data.
+    json_ld_data = []
+
+    for script in soup.find_all(
+        "script",
+        type="application/ld+json",
+    ):
+
+        try:
+            raw = script.string
+
+            if not raw:
+                continue
+
+            parsed = json.loads(raw)
+
+            json_ld_data.append(parsed)
+
+        except Exception:
+            continue
 
     return {
         "url": url,
         "title": title,
         "text": text,
+        "json_ld": json_ld_data,
     }
 
 
-# =========================
-# FILTER
-# =========================
+# ============================================================
+# EVALUATION
+# ============================================================
 
 def evaluate_listing(listing):
+    """
+    HARD FILTER ORDER:
+
+    1. Price
+    2. Location
+    3. TT / triathlon
+    4. Powermeter
+
+    Daarna pas aanvullende informatie.
+    """
+
     text = listing["text"]
+
+    # --------------------------------------------------------
+    # PRICE
+    # --------------------------------------------------------
 
     price = get_price(text)
 
     if price is None:
-        return None
+        return {
+            "match": False,
+            "reason": "geen_prijs",
+        }
 
-    if price < MIN_PRICE or price > MAX_PRICE:
-        return None
+    if price > MAX_BUDGET:
+        return {
+            "match": False,
+            "reason": "boven_budget",
+            "price": price,
+        }
 
-    # TT / triathlon requirement
-    if not contains_any(text, TT_KEYWORDS):
-        return None
+    # --------------------------------------------------------
+    # LOCATION
+    # --------------------------------------------------------
 
-    # Province requirement
-    if not contains_any(text, TARGET_PROVINCES):
-        return None
+    location = detect_location(text)
 
-    # Power meter is HARD requirement
-    has_power_meter = contains_any(text, POWER_KEYWORDS)
+    if not location["allowed"]:
+        return {
+            "match": False,
+            "reason": "buiten_regio",
+            "price": price,
+        }
 
-    if not has_power_meter:
-        return None
+    # --------------------------------------------------------
+    # TT / TRIATHLON
+    # --------------------------------------------------------
 
-    has_target_size = contains_any(text, SIZE_KEYWORDS)
+    if not is_tt_or_triathlon(text):
 
-    if TARGET_MIN_PRICE <= price <= TARGET_MAX_PRICE:
-        deal_class = "BUDGET"
-    elif price < TARGET_MIN_PRICE:
-        deal_class = "UNDER_BUDGET"
-    else:
-        deal_class = "OVER_TARGET"
+        return {
+            "match": False,
+            "reason": "geen_tt_triathlon",
+            "price": price,
+            "province": location["province"],
+        }
+
+    # --------------------------------------------------------
+    # POWER METER
+    # --------------------------------------------------------
+
+    if not has_power_meter(text):
+
+        return {
+            "match": False,
+            "reason": "geen_powermeter",
+            "price": price,
+            "province": location["province"],
+        }
+
+    # --------------------------------------------------------
+    # SIZE
+    # --------------------------------------------------------
+
+    probable_size = has_probable_size(text)
+
+    # --------------------------------------------------------
+    # RESULT
+    # --------------------------------------------------------
 
     return {
+        "match": True,
+        "reason": "match",
+
         "url": listing["url"],
         "title": listing["title"],
+
         "price": price,
-        "has_power_meter": has_power_meter,
-        "has_target_size": has_target_size,
-        "deal_class": deal_class,
+
+        "province": location["province"],
+        "location": location["location"],
+
+        "has_power_meter": True,
+        "probable_size": probable_size,
+
+        "rider_height": RIDER_HEIGHT_CM,
+        "rider_inseam": RIDER_INSEAM_CM,
     }
 
 
-# =========================
+# ============================================================
 # TELEGRAM
-# =========================
+# ============================================================
 
 def send_telegram(message):
-    token = os.getenv("TELEGRAM_BOT_TOKEN")
-    chat_id = os.getenv("TELEGRAM_CHAT_ID")
+    token = os.getenv(
+        "TELEGRAM_BOT_TOKEN"
+    )
 
-    if not token or not chat_id:
-        print("Telegram secrets ontbreken.")
+    chat_id = os.getenv(
+        "TELEGRAM_CHAT_ID"
+    )
+
+    if not token:
+        print(
+            "Telegram niet geconfigureerd: "
+            "TELEGRAM_BOT_TOKEN ontbreekt."
+        )
         return False
 
-    url = f"https://api.telegram.org/bot{token}/sendMessage"
+    if not chat_id:
+        print(
+            "Telegram niet geconfigureerd: "
+            "TELEGRAM_CHAT_ID ontbreekt."
+        )
+        return False
 
-    response = requests.post(
+    url = (
+        "https://api.telegram.org/"
+        f"bot{token}/sendMessage"
+    )
+
+    response = SESSION.post(
         url,
         json={
             "chat_id": chat_id,
@@ -311,120 +840,411 @@ def send_telegram(message):
     return True
 
 
-def format_message(item):
-    size = (
-        "📏 Maat lijkt interessant"
-        if item["has_target_size"]
-        else "📏 Maat controleren"
-    )
+def format_message(result, changed=False):
+    if result["probable_size"]:
+        size_text = (
+            "📏 Maat lijkt mogelijk geschikt "
+            "(54–56/M gevonden)"
+        )
+    else:
+        size_text = (
+            "📏 Maat niet duidelijk vermeld — "
+            "controleren"
+        )
+
+    if changed:
+        header = "🔄 PRIJS/ADVERTENTIE GEWIJZIGD"
+    else:
+        header = "🚨 NIEUWE TT-DEAL"
 
     return (
-        f"🚨 NIEUWE TT-DEAL\n\n"
-        f"{item['title']}\n"
-        f"💶 €{item['price']:,.0f}\n"
+        f"{header}\n\n"
+        f"{result['title']}\n\n"
+        f"💶 €{result['price']:,.0f}\n"
+        f"📍 {result['location']} "
+        f"({result['province']})\n"
         f"⚡ Powermeter gevonden\n"
-        f"{size}\n"
-        f"📍 West-/Oost-Vlaanderen\n\n"
-        f"🔗 {item['url']}"
+        f"{size_text}\n"
+        f"👤 Profiel: "
+        f"{RIDER_HEIGHT_CM} cm / "
+        f"{RIDER_INSEAM_CM} cm\n\n"
+        f"🔗 {result['url']}"
     )
 
 
-# =========================
+# ============================================================
 # MAIN
-# =========================
+# ============================================================
 
 def main():
-    print("=== 2dehands TT Bike Monitor ===")
-    print(f"ONLY_NEW={ONLY_NEW}")
-    print(f"TEST_MODE={TEST_MODE}")
-    print(f"DRY_RUN={DRY_RUN}")
+
+    print()
+    print("=" * 60)
+    print("2DEHANDS TT / TRIATHLON MONITOR")
+    print("=" * 60)
+
+    print(f"MAX_BUDGET       = €{MAX_BUDGET}")
+    print(f"ONLY_NEW         = {ONLY_NEW}")
+    print(f"TEST_MODE        = {TEST_MODE}")
+    print(f"DRY_RUN          = {DRY_RUN}")
+    print(f"MAX_LISTINGS     = {MAX_LISTINGS_PER_RUN}")
+    print(
+        f"RIDER            = "
+        f"{RIDER_HEIGHT_CM} cm / "
+        f"{RIDER_INSEAM_CM} cm"
+    )
 
     seen = load_seen()
 
-    print(f"Reeds geziene advertenties: {len(seen)}")
+    print(
+        f"Reeds opgeslagen advertenties: "
+        f"{len(seen)}"
+    )
+
+    # --------------------------------------------------------
+    # SEARCH
+    # --------------------------------------------------------
 
     all_candidates = {}
 
     for search_url in SEARCH_URLS:
-        print(f"Zoeken: {search_url}")
+
+        print()
+        print(
+            f"Zoeken: {search_url}"
+        )
 
         try:
-            html = fetch(search_url)
-            links = extract_listing_links(html)
 
-            print(f"  {len(links)} links gevonden")
+            html = fetch(
+                search_url
+            )
+
+            links = extract_listing_links(
+                html
+            )
+
+            print(
+                f"  {len(links)} links gevonden"
+            )
 
             for item in links:
-                all_candidates[item["url"]] = item
+                all_candidates[
+                    item["url"]
+                ] = item
 
-            time.sleep(2)
+            time.sleep(
+                REQUEST_DELAY_SECONDS
+            )
 
         except Exception as exc:
-            print(f"FOUT bij zoekpagina: {exc}")
 
-    print(f"Totaal unieke links: {len(all_candidates)}")
+            print(
+                f"  FOUT: {exc}"
+            )
+
+    print()
+    print(
+        f"Totaal unieke links: "
+        f"{len(all_candidates)}"
+    )
+
+    # --------------------------------------------------------
+    # PROCESS LISTINGS
+    # --------------------------------------------------------
 
     matches = []
 
-    for index, candidate in enumerate(all_candidates.values(), start=1):
-        url = candidate["url"]
+    inspected = 0
 
-        # New-only filter
-        if ONLY_NEW and url in seen and not TEST_MODE:
-            continue
+    stats = {
+        "boven_budget": 0,
+        "buiten_regio": 0,
+        "geen_tt_triathlon": 0,
+        "geen_powermeter": 0,
+        "geen_prijs": 0,
+        "matches": 0,
+        "errors": 0,
+        "skipped_seen": 0,
+    }
 
-        try:
-            details = get_listing_details(url)
-            result = evaluate_listing(details)
+    for candidate in all_candidates.values():
 
-            if result:
-                matches.append(result)
-                print(
-                    f"MATCH: €{result['price']:.0f} "
-                    f"{result['title'][:100]}"
-                )
+        if inspected >= MAX_LISTINGS_PER_RUN:
 
-            # Small delay between listing requests
-            time.sleep(1)
+            print(
+                "Maximum aantal advertenties "
+                "bereikt."
+            )
 
-        except Exception as exc:
-            print(f"FOUT bij {url}: {exc}")
-
-        # Prevent runaway scraping
-        if index >= 50:
-            print("Maximaal 50 advertenties gecontroleerd.")
             break
 
-    # TEST_MODE:
-    # existing ads are allowed to appear.
-    if TEST_MODE:
-        print("\nTEST MODE: bestaande matches mogen worden gemeld.")
+        url = candidate["url"]
 
-    if not matches:
-        print("Geen matches.")
-    else:
-        print(f"\n{len(matches)} match(es) gevonden.")
+        previous = seen.get(url)
+
+        # ----------------------------------------------------
+        # In TEST_MODE testen we bestaande advertenties opnieuw.
+        # ----------------------------------------------------
+
+        if (
+            ONLY_NEW
+            and previous is not None
+            and not TEST_MODE
+        ):
+
+            stats["skipped_seen"] += 1
+
+            continue
+
+        inspected += 1
+
+        print()
+        print(
+            f"[{inspected}] "
+            f"{url}"
+        )
+
+        try:
+
+            listing = get_listing_details(
+                url
+            )
+
+            result = evaluate_listing(
+                listing
+            )
+
+            # ------------------------------------------------
+            # SAVE STATE
+            #
+            # Belangrijk:
+            # We bewaren WEL dat we de advertentie bekeken
+            # hebben, maar een match blijft apart.
+            #
+            # Daardoor kan een advertentie later opnieuw
+            # matchen wanneer de prijs verandert.
+            # ------------------------------------------------
+
+            current_price = result.get(
+                "price"
+            )
+
+            old_price = None
+
+            if previous:
+                old_price = previous.get(
+                    "last_price"
+                )
+
+            price_changed = (
+                old_price is not None
+                and current_price is not None
+                and old_price != current_price
+            )
+
+            seen[url] = {
+                "last_price": current_price,
+                "last_title": listing.get(
+                    "title",
+                    "",
+                ),
+                "last_location": result.get(
+                    "location"
+                ),
+                "last_province": result.get(
+                    "province"
+                ),
+                "last_match": result.get(
+                    "match",
+                    False,
+                ),
+                "last_reason": result.get(
+                    "reason"
+                ),
+            }
+
+            # ------------------------------------------------
+            # NO MATCH
+            # ------------------------------------------------
+
+            if not result.get(
+                "match",
+                False,
+            ):
+
+                reason = result.get(
+                    "reason",
+                    "onbekend",
+                )
+
+                stats[reason] = (
+                    stats.get(
+                        reason,
+                        0,
+                    ) + 1
+                )
+
+                print(
+                    f"  SKIP: {reason}"
+                )
+
+                if current_price is not None:
+                    print(
+                        f"  prijs: "
+                        f"€{current_price:.0f}"
+                    )
+
+                continue
+
+            # ------------------------------------------------
+            # MATCH
+            # ------------------------------------------------
+
+            stats["matches"] += 1
+
+            # We sturen:
+            #
+            # - nieuwe matches
+            # - OF opnieuw relevante matches wanneer de
+            #   advertentie gewijzigd is.
+            #
+            # TEST_MODE forceert opnieuw een melding.
+            # ------------------------------------------------
+
+            was_previous_match = bool(
+                previous
+                and previous.get(
+                    "last_match",
+                    False,
+                )
+            )
+
+            should_notify = (
+                TEST_MODE
+                or previous is None
+                or not was_previous_match
+                or price_changed
+            )
+
+            if should_notify:
+
+                matches.append({
+                    "result": result,
+                    "changed": price_changed,
+                })
+
+                print(
+                    "  >>> MATCH!"
+                )
+
+            else:
+
+                print(
+                    "  MATCH, maar reeds "
+                    "eerder gemeld."
+                )
+
+        except Exception as exc:
+
+            stats["errors"] += 1
+
+            print(
+                f"  FOUT bij advertentie: "
+                f"{exc}"
+            )
+
+        time.sleep(
+            REQUEST_DELAY_SECONDS
+        )
+
+    # --------------------------------------------------------
+    # SAVE STATE
+    # --------------------------------------------------------
+
+    save_seen(
+        seen
+    )
+
+    # --------------------------------------------------------
+    # RESULTS
+    # --------------------------------------------------------
+
+    print()
+    print("=" * 60)
+    print("RESULTAAT")
+    print("=" * 60)
+
+    for key, value in stats.items():
+
+        print(
+            f"{key:20} {value}"
+        )
+
+    print()
+    print(
+        f"Nieuwe meldingen: "
+        f"{len(matches)}"
+    )
+
+    # --------------------------------------------------------
+    # SEND TELEGRAM
+    # --------------------------------------------------------
 
     for item in matches:
-        message = format_message(item)
 
-        print("\n---")
+        result = item["result"]
+        changed = item["changed"]
+
+        message = format_message(
+            result,
+            changed=changed,
+        )
+
+        print()
+        print("-" * 60)
         print(message)
+        print("-" * 60)
 
-        if not DRY_RUN:
-            send_telegram(message)
+        if DRY_RUN:
 
-    # Mark everything we inspected as seen.
-    # This is what makes ONLY_NEW work on future runs.
-    for url in all_candidates:
-        seen.add(url)
+            print(
+                "DRY_RUN=true → "
+                "Telegram NIET verstuurd."
+            )
 
-    save_seen(seen)
+        else:
 
-    print(f"\nSeen database: {len(seen)} advertenties.")
+            try:
+
+                send_telegram(
+                    message
+                )
+
+                print(
+                    "Telegram verstuurd."
+                )
+
+            except Exception as exc:
+
+                print(
+                    f"Telegram fout: {exc}"
+                )
+
+    # --------------------------------------------------------
+    # FINAL
+    # --------------------------------------------------------
+
+    print()
+    print(
+        f"Seen database bevat nu "
+        f"{len(seen)} advertenties."
+    )
 
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(
+        main()
+    )
