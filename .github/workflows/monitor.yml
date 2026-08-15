@@ -1,0 +1,62 @@
+name: 2dehands TT Bike Monitor
+
+on:
+  workflow_dispatch:
+    inputs:
+      test_mode:
+        description: "Test bestaande advertenties opnieuw"
+        required: false
+        default: "true"
+
+      dry_run:
+        description: "Geen Telegram sturen"
+        required: false
+        default: "true"
+
+  schedule:
+    # Elke 6 uur
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Python installeren
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Dependencies installeren
+        run: pip install -r requirements.txt
+
+      - name: Monitor uitvoeren
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+          ONLY_NEW: "true"
+
+          # Bij automatische runs:
+          TEST_MODE: "false"
+          DRY_RUN: "false"
+
+        run: python monitor.py
+
+      - name: Seen database bewaren
+        run: |
+          git config user.name "2dehands TT Monitor"
+          git config user.email "actions@github.com"
+
+          git add seen.json
+
+          git diff --cached --quiet || \
+            git commit -m "Update seen listings"
+
+          git push
