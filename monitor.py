@@ -16,7 +16,7 @@ from bs4 import BeautifulSoup
 
 BASE_URL = "https://www.2dehands.be"
 
-# Maximum aankoopprijs.
+# Hard maximum budget.
 MAX_BUDGET = int(os.getenv("MAX_BUDGET", "1700"))
 
 # Rider profile
@@ -51,20 +51,20 @@ SEARCH_URLS = [
     "https://www.2dehands.be/l/fietsen-en-brommers/fietsen-racefietsen/q/tijdrit/",
     "https://www.2dehands.be/l/fietsen-en-brommers/fietsen-racefietsen/q/triatlon/",
     "https://www.2dehands.be/l/fietsen-en-brommers/fietsen-racefietsen/q/triathlon/",
+    "https://www.2dehands.be/l/fietsen-en-brommers/fietsen-racefietsen/q/triatlon%2Bfiets/",
+    "https://www.2dehands.be/l/fietsen-en-brommers/fietsen-racefietsen/q/triathlon%2Bfiets/",
+    "https://www.2dehands.be/l/fietsen-en-brommers/fietsen-racefietsen/q/tt%2Bfiets/",
 ]
 
 
 # ============================================================
-# HARD LOCATION FILTER
+# LOCATION FILTER
 # ============================================================
 
-# We accepteren uitsluitend West- en Oost-Vlaanderen.
+# Alleen West- en Oost-Vlaanderen.
 #
-# De provincienaam zelf wordt gecontroleerd wanneer die in de
-# advertentie voorkomt.
-#
-# Daarnaast gebruiken we gemeenten/steden, omdat 2dehands vaak
-# alleen de plaatsnaam toont.
+# We controleren zowel de provincienaam als gemeenten/steden,
+# omdat 2dehands niet altijd de provincie letterlijk toont.
 
 WEST_FLANDERS_LOCATIONS = {
     "aalbeke",
@@ -82,7 +82,6 @@ WEST_FLANDERS_LOCATIONS = {
     "deerlijk",
     "diksmuide",
     "gistel",
-    "gooik",  # harmless fallback; can remove if desired
     "harelbeke",
     "heist",
     "heuvelland",
@@ -98,9 +97,8 @@ WEST_FLANDERS_LOCATIONS = {
     "langemark",
     "langemark-poelkapelle",
     "ledegem",
-    "leper",
     "ieper",
-    "lo-reninge",
+    "leper",
     "lo-reninge",
     "menen",
     "meulebeke",
@@ -112,11 +110,9 @@ WEST_FLANDERS_LOCATIONS = {
     "poperinge",
     "roeselare",
     "ruiselede",
-    "spiere-helkijn",
     "staden",
     "torhout",
     "veurne",
-    "vingem",
     "waregem",
     "wervik",
     "wevelgem",
@@ -129,8 +125,6 @@ WEST_FLANDERS_LOCATIONS = {
 
 EAST_FLANDERS_LOCATIONS = {
     "aalst",
-    "aardenburg",
-    "assene",
     "assenede",
     "brakel",
     "deinze",
@@ -140,7 +134,6 @@ EAST_FLANDERS_LOCATIONS = {
     "de pinte",
     "evergem",
     "geraardsbergen",
-    "gente",
     "gent",
     "grembergen",
     "hamme",
@@ -161,7 +154,6 @@ EAST_FLANDERS_LOCATIONS = {
     "ronse",
     "sint-amandsberg",
     "sint-laureins",
-    "sint-niklaas",
     "sint-niklaas",
     "stekene",
     "temse",
@@ -192,35 +184,67 @@ TARGET_LOCATIONS = (
 # ============================================================
 
 TT_KEYWORDS = {
-    "tijdrit",
+    # Nederlands
     "tijdritfiets",
     "tijdrit fiets",
+    "tijdrit-fiets",
+    "tijdrit",
+    "triatlonfiets",
+    "triatlon fiets",
+    "triatlon-fiets",
     "triatlon",
+    "triathlonfiets",
+    "triathlon fiets",
+    "triathlon-fiets",
     "triathlon",
+
+    # Engels / internationaal
+    "time trial",
+    "time-trial",
+    "timetrial",
+    "time trial bike",
+    "time-trial bike",
     "tt bike",
     "tt-bike",
     "tt fiets",
+    "tt-fiets",
+    "tri bike",
+    "tri-bike",
+
+    # Algemene TT-termen
     "chrono",
-    "time trial",
-    "timetrial",
-    "timemachine",
-    "speed concept",
-    "shiv",
-    "dean",
-    "plasma",
-    "p3",
-    "p5",
-    "slice",
-    "speedmax",
-    "trinity",
-    "foil tt",
-    "aeroad tt",
+    "tt frame",
+
+    # Bekende TT-modellen
+    "bmc timemachine",
+    "trek speed concept",
+    "cervelo p3",
+    "cervélo p3",
+    "cervelo p5",
+    "cervélo p5",
+    "specialized shiv",
+    "canyon speedmax",
+    "giant trinity",
+    "scott plasma",
+    "ridley dean",
+    "felt ia",
+    "felt da",
+    "cannondale slice",
+    "cube aerium",
+    "merida warp",
+    "merida time warp",
+    "isaac muon",
 }
 
 
 # ============================================================
 # POWER METER KEYWORDS
 # ============================================================
+
+# Powermeter is NOT mandatory.
+#
+# Deze keywords worden enkel gebruikt om te detecteren of een
+# fiets een powermeter heeft.
 
 POWER_KEYWORDS = {
     "powermeter",
@@ -230,7 +254,6 @@ POWER_KEYWORDS = {
     "vermogens meter",
     "wattagemeter",
     "wattage meter",
-    "wattagemeter",
     "4iiii",
     "stages",
     "quarq",
@@ -274,7 +297,7 @@ SIZE_KEYWORDS = {
 
 
 # ============================================================
-# HTTP
+# HTTP SESSION
 # ============================================================
 
 SESSION = requests.Session()
@@ -298,18 +321,11 @@ SESSION.headers.update({
 # ============================================================
 
 def normalize(text):
-    """
-    Normaliseert tekst zodat zoeken op keywords betrouwbaarder wordt.
-    """
     if not text:
         return ""
 
     text = text.lower()
-
-    # Non-breaking spaces etc.
     text = text.replace("\xa0", " ")
-
-    # Meerdere whitespace characters naar één spatie.
     text = re.sub(r"\s+", " ", text)
 
     return text.strip()
@@ -317,14 +333,16 @@ def normalize(text):
 
 def load_seen():
     """
-    seen.json bevat:
+    seen.json structuur:
 
     {
         "URL": {
             "last_price": 1500,
             "last_title": "...",
             "last_location": "...",
-            "matched": true
+            "last_province": "...",
+            "last_match": true,
+            "last_reason": "match"
         }
     }
     """
@@ -363,10 +381,6 @@ def save_seen(seen):
 
 
 def contains_any(text, keywords):
-    """
-    Controleert of één van de keywords in de tekst voorkomt.
-    """
-
     text = normalize(text)
 
     return any(
@@ -380,16 +394,6 @@ def contains_any(text, keywords):
 # ============================================================
 
 def parse_price_value(value):
-    """
-    Probeert Belgische prijsnotaties te interpreteren.
-
-    Voorbeelden:
-        1.500
-        1.500,00
-        1500
-        1500,00
-    """
-
     value = value.strip()
     value = value.replace("€", "")
     value = value.replace("EUR", "")
@@ -407,8 +411,8 @@ def parse_price_value(value):
     elif value.count(".") == 1:
         left, right = value.split(".")
 
-        # 1.500 -> 1500
         if len(right) == 3:
+            # 1.500
             value = left + right
 
     try:
@@ -419,9 +423,12 @@ def parse_price_value(value):
 
 def get_price(text):
     """
-    Zoekt een prijs in de advertentietekst.
+    Probeert een Belgische advertentieprijs te vinden.
 
-    We proberen eerst expliciete euro-notaties.
+    Voorbeelden:
+        € 1.500
+        €1.500,00
+        1500 euro
     """
 
     patterns = [
@@ -446,7 +453,6 @@ def get_price(text):
                 continue
 
             # Sanity check.
-            # We willen geen jaartallen of andere getallen.
             if 50 <= price <= 100000:
                 return price
 
@@ -459,21 +465,15 @@ def get_price(text):
 
 def detect_location(text):
     """
-    Geeft terug:
+    Alleen West- en Oost-Vlaanderen worden geaccepteerd.
 
-        {
-            "allowed": True/False,
-            "province": "...",
-            "location": "..."
-        }
-
-    Provincienaam heeft voorrang.
-    Daarna controleren we gemeenten/steden.
+    Eerst wordt expliciete provincie-informatie gezocht.
+    Daarna zoeken we naar bekende gemeenten/steden.
     """
 
     text = normalize(text)
 
-    # 1. Expliciete provincie
+    # Explicit province
     if (
         "west-vlaanderen" in text
         or "west vlaanderen" in text
@@ -494,11 +494,7 @@ def detect_location(text):
             "location": "Oost-Vlaanderen",
         }
 
-    # 2. Plaatsnaam
-    #
-    # We zoeken bewust als woordgrens om bijvoorbeeld
-    # "gent" niet te laten matchen met een ander woord.
-
+    # Municipality / city
     for location in sorted(
         TARGET_LOCATIONS,
         key=len,
@@ -511,7 +507,11 @@ def detect_location(text):
             + r"(?![a-z])"
         )
 
-        if re.search(pattern, text):
+        if re.search(
+            pattern,
+            text,
+        ):
+
             if location in WEST_FLANDERS_LOCATIONS:
                 province = "West-Vlaanderen"
             else:
@@ -542,10 +542,17 @@ def is_tt_or_triathlon(text):
 
 
 # ============================================================
-# POWER METER
+# POWER METER DETECTION
 # ============================================================
 
-def has_power_meter(text):
+def detect_power_meter(text):
+    """
+    Powermeter is OPTIONAL.
+
+    Returns True when one of the power meter keywords
+    is found.
+    """
+
     return contains_any(
         text,
         POWER_KEYWORDS,
@@ -553,7 +560,7 @@ def has_power_meter(text):
 
 
 # ============================================================
-# SIZE
+# SIZE DETECTION
 # ============================================================
 
 def has_probable_size(text):
@@ -590,7 +597,7 @@ def extract_listing_links(html):
             href,
         )
 
-        # Strip query parameters where possible.
+        # Remove query parameters.
         url = url.split("?")[0]
 
         title = link.get_text(
@@ -658,7 +665,7 @@ def get_listing_details(url):
             )
         )
 
-    # Try to find JSON-LD product/listing data.
+    # Optional JSON-LD extraction.
     json_ld_data = []
 
     for script in soup.find_all(
@@ -693,14 +700,15 @@ def get_listing_details(url):
 
 def evaluate_listing(listing):
     """
-    HARD FILTER ORDER:
+    HARD FILTERS:
 
     1. Price
     2. Location
     3. TT / triathlon
-    4. Powermeter
 
-    Daarna pas aanvullende informatie.
+    Powermeter is OPTIONAL.
+
+    Size is informational only.
     """
 
     text = listing["text"]
@@ -754,23 +762,20 @@ def evaluate_listing(listing):
     # POWER METER
     # --------------------------------------------------------
 
-    if not has_power_meter(text):
-
-        return {
-            "match": False,
-            "reason": "geen_powermeter",
-            "price": price,
-            "province": location["province"],
-        }
+    power_meter = detect_power_meter(
+        text
+    )
 
     # --------------------------------------------------------
     # SIZE
     # --------------------------------------------------------
 
-    probable_size = has_probable_size(text)
+    probable_size = has_probable_size(
+        text
+    )
 
     # --------------------------------------------------------
-    # RESULT
+    # MATCH
     # --------------------------------------------------------
 
     return {
@@ -785,7 +790,7 @@ def evaluate_listing(listing):
         "province": location["province"],
         "location": location["location"],
 
-        "has_power_meter": True,
+        "has_power_meter": power_meter,
         "probable_size": probable_size,
 
         "rider_height": RIDER_HEIGHT_CM,
@@ -841,21 +846,26 @@ def send_telegram(message):
 
 
 def format_message(result, changed=False):
-    if result["probable_size"]:
-        size_text = (
-            "📏 Maat lijkt mogelijk geschikt "
-            "(54–56/M gevonden)"
-        )
-    else:
-        size_text = (
-            "📏 Maat niet duidelijk vermeld — "
-            "controleren"
-        )
 
     if changed:
         header = "🔄 PRIJS/ADVERTENTIE GEWIJZIGD"
     else:
         header = "🚨 NIEUWE TT-DEAL"
+
+    if result["has_power_meter"]:
+        power_text = "⚡ Powermeter: JA"
+    else:
+        power_text = "⚡ Powermeter: niet gevonden"
+
+    if result["probable_size"]:
+        size_text = (
+            "📏 Maat: mogelijk interessant "
+            "(54–56/M gevonden)"
+        )
+    else:
+        size_text = (
+            "📏 Maat: niet duidelijk vermeld"
+        )
 
     return (
         f"{header}\n\n"
@@ -863,13 +873,65 @@ def format_message(result, changed=False):
         f"💶 €{result['price']:,.0f}\n"
         f"📍 {result['location']} "
         f"({result['province']})\n"
-        f"⚡ Powermeter gevonden\n"
+        f"{power_text}\n"
         f"{size_text}\n"
         f"👤 Profiel: "
         f"{RIDER_HEIGHT_CM} cm / "
         f"{RIDER_INSEAM_CM} cm\n\n"
         f"🔗 {result['url']}"
     )
+
+
+def send_no_matches_message(stats):
+    """
+    Telegrammelding wanneer deze run geen nieuwe matches
+    heeft opgeleverd.
+    """
+
+    message = (
+        "ℹ️ 2dehands TT-monitor\n\n"
+        "Geen nieuwe matches gevonden.\n\n"
+        f"💰 Max. budget: €{MAX_BUDGET}\n"
+        "📍 West- en Oost-Vlaanderen\n"
+        "🚴 TT / tijdrit / triathlon\n"
+        "⚡ Powermeter: niet verplicht\n"
+        f"👤 Profiel: "
+        f"{RIDER_HEIGHT_CM} cm / "
+        f"{RIDER_INSEAM_CM} cm\n\n"
+        f"🔎 Gecontroleerd: "
+        f"{stats['inspected']} advertenties"
+    )
+
+    if DRY_RUN:
+
+        print()
+        print("-" * 60)
+        print(message)
+        print("-" * 60)
+        print(
+            "DRY_RUN=true → "
+            "Telegram NIET verstuurd."
+        )
+
+        return
+
+    try:
+
+        send_telegram(
+            message
+        )
+
+        print(
+            "Telegram: "
+            "geen-match melding verstuurd."
+        )
+
+    except Exception as exc:
+
+        print(
+            f"Telegram fout bij "
+            f"geen-match melding: {exc}"
+        )
 
 
 # ============================================================
@@ -883,15 +945,36 @@ def main():
     print("2DEHANDS TT / TRIATHLON MONITOR")
     print("=" * 60)
 
-    print(f"MAX_BUDGET       = €{MAX_BUDGET}")
-    print(f"ONLY_NEW         = {ONLY_NEW}")
-    print(f"TEST_MODE        = {TEST_MODE}")
-    print(f"DRY_RUN          = {DRY_RUN}")
-    print(f"MAX_LISTINGS     = {MAX_LISTINGS_PER_RUN}")
+    print(
+        f"MAX_BUDGET       = €{MAX_BUDGET}"
+    )
+
+    print(
+        f"ONLY_NEW         = {ONLY_NEW}"
+    )
+
+    print(
+        f"TEST_MODE        = {TEST_MODE}"
+    )
+
+    print(
+        f"DRY_RUN          = {DRY_RUN}"
+    )
+
+    print(
+        f"MAX_LISTINGS     = "
+        f"{MAX_LISTINGS_PER_RUN}"
+    )
+
     print(
         f"RIDER            = "
         f"{RIDER_HEIGHT_CM} cm / "
         f"{RIDER_INSEAM_CM} cm"
+    )
+
+    print(
+        "POWER METER      = "
+        "OPTIONEEL"
     )
 
     seen = load_seen()
@@ -929,6 +1012,7 @@ def main():
             )
 
             for item in links:
+
                 all_candidates[
                     item["url"]
                 ] = item
@@ -958,19 +1042,24 @@ def main():
     inspected = 0
 
     stats = {
+        "inspected": 0,
         "boven_budget": 0,
         "buiten_regio": 0,
         "geen_tt_triathlon": 0,
-        "geen_powermeter": 0,
         "geen_prijs": 0,
         "matches": 0,
+        "matches_met_powermeter": 0,
+        "matches_zonder_powermeter": 0,
         "errors": 0,
         "skipped_seen": 0,
     }
 
     for candidate in all_candidates.values():
 
-        if inspected >= MAX_LISTINGS_PER_RUN:
+        if (
+            inspected
+            >= MAX_LISTINGS_PER_RUN
+        ):
 
             print(
                 "Maximum aantal advertenties "
@@ -981,10 +1070,12 @@ def main():
 
         url = candidate["url"]
 
-        previous = seen.get(url)
+        previous = seen.get(
+            url
+        )
 
         # ----------------------------------------------------
-        # In TEST_MODE testen we bestaande advertenties opnieuw.
+        # ONLY_NEW
         # ----------------------------------------------------
 
         if (
@@ -998,11 +1089,11 @@ def main():
             continue
 
         inspected += 1
+        stats["inspected"] = inspected
 
         print()
         print(
-            f"[{inspected}] "
-            f"{url}"
+            f"[{inspected}] {url}"
         )
 
         try:
@@ -1014,17 +1105,6 @@ def main():
             result = evaluate_listing(
                 listing
             )
-
-            # ------------------------------------------------
-            # SAVE STATE
-            #
-            # Belangrijk:
-            # We bewaren WEL dat we de advertentie bekeken
-            # hebben, maar een match blijft apart.
-            #
-            # Daardoor kan een advertentie later opnieuw
-            # matchen wanneer de prijs verandert.
-            # ------------------------------------------------
 
             current_price = result.get(
                 "price"
@@ -1042,6 +1122,10 @@ def main():
                 and current_price is not None
                 and old_price != current_price
             )
+
+            # ------------------------------------------------
+            # SAVE CURRENT STATE
+            # ------------------------------------------------
 
             seen[url] = {
                 "last_price": current_price,
@@ -1061,6 +1145,10 @@ def main():
                 ),
                 "last_reason": result.get(
                     "reason"
+                ),
+                "last_has_power_meter": result.get(
+                    "has_power_meter",
+                    False,
                 ),
             }
 
@@ -1103,14 +1191,19 @@ def main():
 
             stats["matches"] += 1
 
-            # We sturen:
-            #
-            # - nieuwe matches
-            # - OF opnieuw relevante matches wanneer de
-            #   advertentie gewijzigd is.
-            #
-            # TEST_MODE forceert opnieuw een melding.
-            # ------------------------------------------------
+            if result[
+                "has_power_meter"
+            ]:
+
+                stats[
+                    "matches_met_powermeter"
+                ] += 1
+
+            else:
+
+                stats[
+                    "matches_zonder_powermeter"
+                ] += 1
 
             was_previous_match = bool(
                 previous
@@ -1120,6 +1213,12 @@ def main():
                 )
             )
 
+            # We melden:
+            #
+            # 1. nieuwe advertentie
+            # 2. advertentie die vroeger geen match was
+            # 3. prijswijziging
+            # 4. TEST_MODE
             should_notify = (
                 TEST_MODE
                 or previous is None
@@ -1135,7 +1234,7 @@ def main():
                 })
 
                 print(
-                    "  >>> MATCH!"
+                    "  >>> NIEUWE MATCH!"
                 )
 
             else:
@@ -1178,17 +1277,17 @@ def main():
     for key, value in stats.items():
 
         print(
-            f"{key:20} {value}"
+            f"{key:30} {value}"
         )
 
     print()
     print(
-        f"Nieuwe meldingen: "
+        f"Nieuwe Telegram-meldingen: "
         f"{len(matches)}"
     )
 
     # --------------------------------------------------------
-    # SEND TELEGRAM
+    # SEND MATCHES
     # --------------------------------------------------------
 
     for item in matches:
@@ -1232,6 +1331,16 @@ def main():
                 )
 
     # --------------------------------------------------------
+    # NO NEW MATCHES
+    # --------------------------------------------------------
+
+    if not matches:
+
+        send_no_matches_message(
+            stats
+        )
+
+    # --------------------------------------------------------
     # FINAL
     # --------------------------------------------------------
 
@@ -1243,6 +1352,10 @@ def main():
 
     return 0
 
+
+# ============================================================
+# ENTRY POINT
+# ============================================================
 
 if __name__ == "__main__":
     sys.exit(
