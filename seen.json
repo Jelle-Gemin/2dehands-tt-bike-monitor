@@ -1,1 +1,587 @@
-[]
+{
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2249364716-zeldzame-pinarello-montello-carbon-tijdritfiets-graal": {
+    "last_price": 3000.0,
+    "last_title": "zeldzame pinarello montello carbon tijdritfiets graal (m2249364716) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2430931941-fuji-tijdritfiets-triathlonfiets-in-meer-dan-prima-staat": {
+    "last_price": 1350.0,
+    "last_title": "fuji tijdritfiets / triathlonfiets in meer dan prima staat (m2430931941) — fietsen | racefietsen — 2dehands",
+    "last_location": "Oudenaarde",
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2429501065-triatlon-tijdritfiets-bmc-timemachine-tm02": {
+    "last_price": 1600.0,
+    "last_title": "triatlon / tijdritfiets bmc timemachine tm02 (m2429501065) — fietsen | racefietsen — 2dehands",
+    "last_location": "Oudenaarde",
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2427198939-tijdritfiets-ridley-dean": {
+    "last_price": null,
+    "last_title": "tijdritfiets ridley dean (m2427198939) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "geen_prijs",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2408522526-ridley-dean-tijdritfiets": {
+    "last_price": 2400.0,
+    "last_title": "ridley dean tijdritfiets (m2408522526) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2422324750-isaac-photon-tijdritfiets-ultegra-di2-maat-52": {
+    "last_price": 2350.0,
+    "last_title": "isaac photon tijdritfiets – ultegra di2 - maat 52 (m2422324750) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2426637430-cervelo-p3-carbon-triathlon-tijdritfiets-maat-54": {
+    "last_price": 1099.0,
+    "last_title": "cervélo p3 carbon triathlon / tijdritfiets - maat 54 (m2426637430) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2429887250-canyon-speedmax-cf-8-0-2022-shimano-ultegra-triathlon-tt": {
+    "last_price": 4250.0,
+    "last_title": "canyon speedmax cf 8.0 2022 – shimano ultegra – triathlon/tt (m2429887250) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2422740764-carbon-tijdritfiets-volledig-ultegra": {
+    "last_price": 1100.0,
+    "last_title": "carbon tijdritfiets, volledig ultegra (m2422740764) — fietsen | racefietsen — 2dehands",
+    "last_location": "Oudenaarde",
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2425432501-scott-tt-tijdrit-fiets": {
+    "last_price": 3500.0,
+    "last_title": "scott tt (tijdrit fiets) (m2425432501) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2412472557-stevens-volt-105-tt-triatlonfiets-maat-52": {
+    "last_price": 1600.0,
+    "last_title": "stevens volt 105 tt / triatlonfiets maat 52 (m2412472557) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2422582087-bmc-tijdrit-triatlon-fiets": {
+    "last_price": 2400.0,
+    "last_title": "bmc tijdrit/triatlon fiets (m2422582087) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2425070938-custom-paint-ridley-dean-carbon-tijdritfiets-triatlonfiets": {
+    "last_price": 2900.0,
+    "last_title": "custom paint ridley dean carbon tijdritfiets / triatlonfiets (m2425070938) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2420369556-tijdritfiets-thompson-triatlonfiets-prijs-verlaagd": {
+    "last_price": 2000.0,
+    "last_title": "tijdritfiets thompson triatlonfiets (prijs verlaagd) (m2420369556) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2419604479-argon-18-e-116-tijdrit-triatlon-fiets-maat-m": {
+    "last_price": 2200.0,
+    "last_title": "argon 18 e-116 tijdrit/triatlon fiets. maat m (m2419604479) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2420787802-trek-domane-sl6": {
+    "last_price": 950.0,
+    "last_title": "trek domane sl6 (m2420787802) — fietsen | racefietsen — 2dehands",
+    "last_location": "Dendermonde",
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2375146731-cervelo-p5-frameset-nieuw-ltd-maat-58": {
+    "last_price": 4999.0,
+    "last_title": "cervelo p5 frameset nieuw ltd maat 58 (m2375146731) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2421713161-cervelo-p3-tt-triathlonfiets-m54-sram-red-zipp-808-carbon": {
+    "last_price": 1350.0,
+    "last_title": "cervélo p3 tt/triathlonfiets-m54 –sram red- zipp 808 carbon (m2421713161) — fietsen | racefietsen — 2dehands",
+    "last_location": "Oudenaarde",
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2419965085-stevens-volt-tijdritfiets-m-veel-extras": {
+    "last_price": 2200.0,
+    "last_title": "stevens volt tijdritfiets m veel extras (m2419965085) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2420663088-team-polti-1997": {
+    "last_price": null,
+    "last_title": "team polti 1997 (m2420663088) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "geen_prijs",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2357370640-scott-plasma-rc-tt-hmx-sram-red-nieuw": {
+    "last_price": 6750.0,
+    "last_title": "scott plasma rc tt hmx sram red (nieuw) (m2357370640) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2420324459-bmc-timemachine-01-disc-frs-ml-top-tijdrit-triatlonfiets": {
+    "last_price": 4999.0,
+    "last_title": "bmc timemachine 01 disc frs ml - top tijdrit triatlonfiets (m2420324459) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2405814279-ridley-dean-carbon-tijdritfiets-shimano-ultegra-di2": {
+    "last_price": 1200.0,
+    "last_title": "ridley dean carbon tijdritfiets shimano ultegra di2 (m2405814279) — fietsen | racefietsen — 2dehands",
+    "last_location": "Geraardsbergen",
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2426369883-ridley-fenix-sl-carbon-racefiets-maat-l": {
+    "last_price": 550.0,
+    "last_title": "ridley fenix sl carbon racefiets (maat l) (m2426369883) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2429112811-koersfiets-carbon": {
+    "last_price": 850.0,
+    "last_title": "koersfiets carbon (m2429112811) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2428511133-racefiets-koga-alloy-7005-limited-edition": {
+    "last_price": 650.0,
+    "last_title": "racefiets koga alloy 7005 limited edition (m2428511133) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2402030536-pd-aeria-hydration-unit-triathlon-hydration-system": {
+    "last_price": 75.0,
+    "last_title": "pd aeria hydration unit triathlon hydration system (m2402030536) — fietsen | racefietsen — 2dehands",
+    "last_location": "Oudenaarde",
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2430549920-cube-agree-gtc-race": {
+    "last_price": 400.0,
+    "last_title": "cube agree gtc race (m2430549920) — fietsen | racefietsen — 2dehands",
+    "last_location": "Oudenaarde",
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2408863658-koersfiets-triatlon-fiets": {
+    "last_price": 850.0,
+    "last_title": "koersfiets - triatlon fiets (m2408863658) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2249375503-nieuw-ongelooflijk-zeldzaam-pinarello-montello-tijdritframe": {
+    "last_price": 2000.0,
+    "last_title": "nieuw, ongelooflijk zeldzaam pinarello montello tijdritframe (m2249375503) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2386264334-aluminium-triatlonfiets": {
+    "last_price": 400.0,
+    "last_title": "aluminium triatlonfiets (m2386264334) — fietsen | racefietsen — 2dehands",
+    "last_location": "Oudenaarde",
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2393510230-cervelo-p5-maat-54": {
+    "last_price": 5000.0,
+    "last_title": "cervelo p5 maat 54 (m2393510230) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2368323849-zannata-z112-triathlon-fiets-ffwd-f4r-wielen": {
+    "last_price": 950.0,
+    "last_title": "zannata z112 – triathlon fiets – ffwd f4r wielen (m2368323849) — fietsen | racefietsen — 2dehands",
+    "last_location": "Oudenaarde",
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2412932803-triatlonfiets-900-euro": {
+    "last_price": 900.0,
+    "last_title": "triatlonfiets, 900 euro (m2412932803) — fietsen | racefietsen — 2dehands",
+    "last_location": "Oudenaarde",
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2386663730-goed-onderhouden-tijdritfiets-te-koop": {
+    "last_price": 2100.0,
+    "last_title": "goed onderhouden tijdritfiets te koop (m2386663730) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2418654894-ku-cycle-tf1-2026-triathlon-fiets": {
+    "last_price": 8500.0,
+    "last_title": "ku cycle tf1 2026 triathlon fiets (m2418654894) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2116070165-cube-aerium-c-68-tt-triatlon-fiets-s-m-l-ultegra-di2-nieuw": {
+    "last_price": 3999.0,
+    "last_title": "cube aerium c:68 tt triatlon fiets s m l, ultegra di2 nieuw (m2116070165) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m1864255703-stevens-super-trofeo-tt-triathlon-fiets-nieuw-s": {
+    "last_price": 2250.0,
+    "last_title": "stevens super trofeo tt triathlon fiets, nieuw, s, (m1864255703) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2431062582-miniatuur-koersfietsjes": {
+    "last_price": null,
+    "last_title": "miniatuur koersfietsjes (m2431062582) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "geen_prijs",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2412339678-b-twin-triban-3-26-inch-kinderracefiets-carbon-voorvork": {
+    "last_price": 280.0,
+    "last_title": "b’twin triban 3 - 26 inch kinderracefiets - carbon voorvork (m2412339678) — fietsen | racefietsen — 2dehands",
+    "last_location": "Oudenaarde",
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2428028211-felt-b14-triathlon-clm-taille-56": {
+    "last_price": 700.0,
+    "last_title": "felt b14 triathlon / clm taille 56 (m2428028211) — fietsen | racefietsen — 2dehands",
+    "last_location": "Oudenaarde",
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2411384194-te-koop-giant-trinity-advanced-triatlonfiets-maat-m": {
+    "last_price": 1000.0,
+    "last_title": "te koop: giant trinity advanced, triatlonfiets, maat m (m2411384194) — fietsen | racefietsen — 2dehands",
+    "last_location": "Deerlijk",
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2387717025-felt-15-ia4-time-trial-bicycle-tijdritfiets": {
+    "last_price": 1290.0,
+    "last_title": "felt 15-ia4 time trial bicycle (tijdritfiets) (m2387717025) — fietsen | racefietsen — 2dehands",
+    "last_location": "Oudenaarde",
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2414997425-bmc-tt-fiets": {
+    "last_price": null,
+    "last_title": "bmc tt fiets (m2414997425) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "geen_prijs",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2395477333-triatlon-fiets": {
+    "last_price": 840.0,
+    "last_title": "triatlon fiets (m2395477333) — fietsen | racefietsen — 2dehands",
+    "last_location": "Oudenaarde",
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2429811510-trek-madone-9-koersfiets": {
+    "last_price": 1250.0,
+    "last_title": "trek madone 9 koersfiets (m2429811510) — fietsen | racefietsen — 2dehands",
+    "last_location": "Oostkamp",
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2426640288-mendiz-f8-infinit-aero": {
+    "last_price": 1950.0,
+    "last_title": "mendiz f8 infinit aero (m2426640288) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2416594767-cannondale-tijdritfiets": {
+    "last_price": 2508.0,
+    "last_title": "cannondale tijdritfiets (m2416594767) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2424647319-aero-opzetstuur-voor-racefiets": {
+    "last_price": 300.0,
+    "last_title": "aero opzetstuur voor racefiets (m2424647319) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2419563326-sensa-triatlon-fiets-maat-56": {
+    "last_price": 1900.0,
+    "last_title": "sensa triatlon fiets maat 56 (m2419563326) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2418689927-cube-aerium-race-triathlon-fiets": {
+    "last_price": 2000.0,
+    "last_title": "cube aerium race triathlon fiets (m2418689927) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2401948621-ridley-triatlon-tijdritfiets-te-koop": {
+    "last_price": 720.0,
+    "last_title": "ridley triatlon / tijdritfiets te koop (m2401948621) — fietsen | racefietsen — 2dehands",
+    "last_location": "Oudenaarde",
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2429639913-nieuwe-orbea-ordu-m20iltd-tt-fiets-xl": {
+    "last_price": 5000.0,
+    "last_title": "nieuwe orbea ordu m20iltd tt fiets xl (m2429639913) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2428925995-ridley-dean-tt-fiets-maat-m": {
+    "last_price": 450.0,
+    "last_title": "ridley dean tt fiets maat m (m2428925995) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2428202402-tijdritfiets-giant-trinity-advanced-pro-2015": {
+    "last_price": 3800.0,
+    "last_title": "tijdritfiets - giant trinity advanced pro 2015 (m2428202402) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2430886315-stevens-supertrofeo-2018-large": {
+    "last_price": 2200.0,
+    "last_title": "stevens supertrofeo 2018 large (m2430886315) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2427570248-ridley-dean-fast-tt": {
+    "last_price": 3699.99,
+    "last_title": "ridley dean fast tt (m2427570248) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2430641516-bmc-timemachine-01-disc-tt": {
+    "last_price": 4500.0,
+    "last_title": "bmc timemachine 01 - disc tt (m2430641516) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2427488876-canyon-speedmax-cfr-tt": {
+    "last_price": 120.0,
+    "last_title": "canyon speedmax cfr tt (m2427488876) — fietsen | racefietsen — 2dehands",
+    "last_location": "Roeselare",
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": true
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2425559110-canyon-speedmax-cf-zeer-snelle-tt-triatlonfiets": {
+    "last_price": 5000.0,
+    "last_title": "canyon speedmax cf – zeer snelle tt/triatlonfiets (m2425559110) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2425971617-quintana-roo-pr5": {
+    "last_price": 3500.0,
+    "last_title": "quintana roo pr5 (m2425971617) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2403387702-triatlon-fiets-specialized-shiv-tt": {
+    "last_price": 13500.0,
+    "last_title": "triatlon fiets specialized shiv tt (m2403387702) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2417777568-specialized-s-works-shiv-tt-disc-2025-nieuwstaat": {
+    "last_price": 16424.0,
+    "last_title": "specialized s-works shiv tt disc 2025 | nieuwstaat (m2417777568) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2418869604-cervelo-p5-sram-red-axs-tijdritfiets": {
+    "last_price": 9990.0,
+    "last_title": "cervelo p5 sram red axs tijdritfiets (m2418869604) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2245499157-cube-aerium-c-68x-triatlon-xs-s-m-en-l-sram-shimano-nieuw": {
+    "last_price": 6299.0,
+    "last_title": "cube aerium c:68x triatlon, xs s, m en l sram shimano, nieuw (m2245499157) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  }
+}
