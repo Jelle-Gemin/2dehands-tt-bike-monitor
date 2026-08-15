@@ -56,37 +56,10 @@ SEARCH_URLS = [
     "https://www.2dehands.be/l/fietsen-en-brommers/fietsen-racefietsen/q/tt%2Bfiets/",
 ]
 
-def parse_price_value_from_text(value):
-    """
-    Parseert uitsluitend de tekst uit het officiële prijsveld van
-    2dehands.
-    """
-
-    if not value:
-        return None
-
-    value = normalize(value)
-
-    match = re.search(
-        r"(?:€\\s*)?([\\d\\.,]+)\\s*(?:euro|€)?",
-        value,
-        re.IGNORECASE,
-    )
-
-    if not match:
-        return None
-
-    return parse_price_value(match.group(1))
-
 
 # ============================================================
 # LOCATION FILTER
 # ============================================================
-
-# Alleen West- en Oost-Vlaanderen.
-#
-# We controleren zowel de provincienaam als gemeenten/steden,
-# omdat 2dehands niet altijd de provincie letterlijk toont.
 
 WEST_FLANDERS_LOCATIONS = {
     "aalbeke",
@@ -263,11 +236,6 @@ TT_KEYWORDS = {
 # POWER METER KEYWORDS
 # ============================================================
 
-# Powermeter is NOT mandatory.
-#
-# Deze keywords worden enkel gebruikt om te detecteren of een
-# fiets een powermeter heeft.
-
 POWER_KEYWORDS = {
     "powermeter",
     "power meter",
@@ -346,7 +314,7 @@ def normalize(text):
     if not text:
         return ""
 
-    text = text.lower()
+    text = str(text).lower()
     text = text.replace("\xa0", " ")
     text = re.sub(r"\s+", " ", text)
 
@@ -354,21 +322,6 @@ def normalize(text):
 
 
 def load_seen():
-    """
-    seen.json structuur:
-
-    {
-        "URL": {
-            "last_price": 1500,
-            "last_title": "...",
-            "last_location": "...",
-            "last_province": "...",
-            "last_match": true,
-            "last_reason": "match"
-        }
-    }
-    """
-
     if not SEEN_FILE.exists():
         return {}
 
@@ -412,14 +365,38 @@ def contains_any(text, keywords):
 
 
 # ============================================================
-# PRICE
+# PRICE PARSING
 # ============================================================
 
 def parse_price_value(value):
-    value = value.strip()
+    """
+    Parseert een numerieke prijs.
+
+    Voorbeelden:
+
+        1500
+        1.500
+        1.500,00
+        1500,00
+        1 500
+    """
+
+    if value is None:
+        return None
+
+    value = str(value).strip()
+
     value = value.replace("€", "")
     value = value.replace("EUR", "")
+    value = value.replace("eur", "")
+    value = value.replace("\xa0", " ")
     value = value.strip()
+
+    # Spaties als duizendtalseparator.
+    value = value.replace(" ", "")
+
+    if not value:
+        return None
 
     if "." in value and "," in value:
         # 1.500,00
@@ -439,46 +416,433 @@ def parse_price_value(value):
 
     try:
         return float(value)
-    except ValueError:
+
+    except (ValueError, TypeError):
         return None
 
 
-def get_price(text):
+def is_sane_price(price):
     """
-    Probeert een Belgische advertentieprijs te vinden.
+    Sanity check voor een echte advertentieprijs.
 
-    Voorbeelden:
-        € 1.500
-        €1.500,00
-        1500 euro
+    Dit voorkomt dat bijvoorbeeld een jaar, aantal views
+    of een willekeurig ander getal als prijs wordt gebruikt.
     """
 
-    patterns = [
-        r"€\s*([\d\.,]+)",
-        r"([\d\.,]+)\s*euro",
-        r"prijs\s*[:\-]?\s*€?\s*([\d\.,]+)",
-    ]
+    if price is None:
+        return False
 
-    for pattern in patterns:
+    return 1 <= price <= 1000000
 
-        matches = re.findall(
-            pattern,
-            text,
-            re.IGNORECASE,
-        )
 
-        for match in matches:
+def parse_price_value_from_text(value):
+    """
+    Alleen gebruiken op een element waarvan we al weten dat
+    het een PRIJS-ELEMENT is.
 
-            price = parse_price_value(match)
+    BELANGRIJK:
+    Deze functie wordt NOOIT uitgevoerd op de volledige
+    advertentiebeschrijving.
+    """
 
-            if price is None:
-                continue
+    if not value:
+        return None
 
-            # Sanity check.
-            if 50 <= price <= 100000:
-                return price
+    value = normalize(value)
+
+    match = re.search(
+        r"(?:€\s*)?([\d\.,]+)\s*(?:euro|€)?",
+        value,
+        re.IGNORECASE,
+    )
+
+    if not match:
+        return None
+
+    price = parse_price_value(
+        match.group(1)
+    )
+
+    if is_sane_price(price):
+        return price
 
     return None
+
+
+# ============================================================
+# SAFE PRICE EXTRACTION
+# ============================================================
+
+def extract_price_from_json_ld(soup):
+    """
+    Probeert de prijs uit JSON-LD te halen.
+
+    We accepteren uitsluitend velden die semantisch
+    als offers/price zijn gemarkeerd.
+
+    Dus NIET willekeurig zoeken naar bedragen in JSON.
+    """
+
+    for script in soup.find_all(
+        "script",
+        type="application/ld+json",
+    ):
+
+        raw = script.string
+
+        if not raw:
+            continue
+
+        try:
+            data = json.loads(raw)
+
+        except Exception:
+            continue
+
+        objects = []
+
+        if isinstance(data, dict):
+            objects.append(data)
+
+            graph = data.get("@graph")
+
+            if isinstance(graph, list):
+                objects.extend(
+                    item
+                    for item in graph
+                    if isinstance(item, dict)
+                )
+
+        elif isinstance(data, list):
+            objects.extend(
+                item
+                for item in data
+                if isinstance(item, dict)
+            )
+
+        for item in objects:
+
+            offers = item.get("offers")
+
+            if isinstance(offers, dict):
+
+                price = offers.get("price")
+
+                if price is not None:
+                    parsed = parse_price_value(
+                        price
+                    )
+
+                    if is_sane_price(parsed):
+                        return parsed, "jsonld_offers"
+
+            elif isinstance(offers, list):
+
+                for offer in offers:
+
+                    if not isinstance(
+                        offer,
+                        dict,
+                    ):
+                        continue
+
+                    price = offer.get("price")
+
+                    if price is not None:
+                        parsed = parse_price_value(
+                            price
+                        )
+
+                        if is_sane_price(parsed):
+                            return (
+                                parsed,
+                                "jsonld_offers",
+                            )
+
+    return None, None
+
+
+def extract_price_from_meta(soup):
+    """
+    Probeert expliciet gemarkeerde prijs-meta-data te vinden.
+    """
+
+    selectors = [
+        'meta[itemprop="price"]',
+        'meta[property="product:price:amount"]',
+        'meta[property="og:price:amount"]',
+    ]
+
+    for selector in selectors:
+
+        element = soup.select_one(
+            selector
+        )
+
+        if not element:
+            continue
+
+        content = element.get(
+            "content"
+        )
+
+        price = parse_price_value(
+            content
+        )
+
+        if is_sane_price(price):
+            return price, selector
+
+    return None, None
+
+
+def extract_price_from_itemprop(soup):
+    """
+    Zoekt uitsluitend elementen die expliciet als price
+    gemarkeerd zijn.
+
+    Dit is veilig omdat we NIET de volledige pagina-tekst
+    doorzoeken.
+    """
+
+    selectors = [
+        '[itemprop="price"]',
+        '[itemprop="lowPrice"]',
+        '[itemprop="highPrice"]',
+    ]
+
+    for selector in selectors:
+
+        for element in soup.select(
+            selector
+        ):
+
+            content = (
+                element.get("content")
+                or element.get_text(
+                    " ",
+                    strip=True,
+                )
+            )
+
+            price = parse_price_value(
+                content
+            )
+
+            if is_sane_price(price):
+                return price, selector
+
+    return None, None
+
+
+def extract_price_from_known_dom(soup):
+    """
+    Prijs uit bekende/waarschijnlijke 2dehands DOM-elementen.
+
+    We gebruiken alleen elementen die specifiek bedoeld zijn
+    voor prijsinformatie.
+
+    NOOIT soup.get_text() gebruiken in deze functie.
+    """
+
+    selectors = [
+        ".ListingHeader-module-price",
+
+        # Mogelijke varianten.
+        "[class*='ListingHeader-module-price']",
+        "[class*='listingHeader'][class*='price']",
+        "[class*='Listing'][class*='price']",
+
+        # Algemene semantische price containers.
+        "[data-testid='price']",
+        "[data-test='price']",
+        "[data-cy='price']",
+        "[aria-label*='prijs' i]",
+        "[aria-label*='price' i]",
+    ]
+
+    checked = set()
+
+    for selector in selectors:
+
+        try:
+            elements = soup.select(
+                selector
+            )
+        except Exception:
+            continue
+
+        for element in elements:
+
+            # Niet meerdere keren exact hetzelfde element.
+            element_id = id(element)
+
+            if element_id in checked:
+                continue
+
+            checked.add(element_id)
+
+            # Als een element expliciet aria-label "prijs"
+            # heeft, is dat extra betrouwbaar.
+            content = (
+                element.get("content")
+                or element.get_text(
+                    " ",
+                    strip=True,
+                )
+            )
+
+            price = parse_price_value_from_text(
+                content
+            )
+
+            if is_sane_price(price):
+                return price, selector
+
+    return None, None
+
+
+def extract_price_from_scripts(soup):
+    """
+    Extra veiligheidslaag voor moderne client-side rendering.
+
+    We zoeken NIET naar willekeurige bedragen.
+
+    Alleen script-data waarin een expliciete prijs-key voorkomt
+    wordt onderzocht.
+
+    Deze functie is bewust conservatief.
+    """
+
+    price_keys = {
+        "price",
+        "pricevalue",
+        "listingprice",
+        "askingprice",
+        "saleprice",
+    }
+
+    for script in soup.find_all("script"):
+
+        raw = script.string
+
+        if not raw:
+            continue
+
+        raw_normalized = normalize(raw)
+
+        # Alleen scripts waarin expliciete price-gerelateerde
+        # keys voorkomen.
+        if not any(
+            key in raw_normalized
+            for key in price_keys
+        ):
+            continue
+
+        # JSON proberen.
+        try:
+            data = json.loads(raw)
+        except Exception:
+            data = None
+
+        def inspect_object(obj):
+            if isinstance(obj, dict):
+
+                for key, value in obj.items():
+
+                    normalized_key = normalize(
+                        key
+                    ).replace(
+                        "_",
+                        ""
+                    ).replace(
+                        "-",
+                        ""
+                    )
+
+                    if normalized_key in price_keys:
+
+                        price = parse_price_value(
+                            value
+                        )
+
+                        if is_sane_price(price):
+                            return price
+
+                    result = inspect_object(
+                        value
+                    )
+
+                    if result is not None:
+                        return result
+
+            elif isinstance(obj, list):
+
+                for item in obj:
+
+                    result = inspect_object(
+                        item
+                    )
+
+                    if result is not None:
+                        return result
+
+            return None
+
+        if data is not None:
+
+            price = inspect_object(
+                data
+            )
+
+            if is_sane_price(price):
+                return price, "script_json_price"
+
+    return None, None
+
+
+def extract_authoritative_price(soup):
+    """
+    Centrale prijsfunctie.
+
+    Volgorde:
+
+        1. JSON-LD offers.price
+        2. meta itemprop/product price
+        3. itemprop=price
+        4. bekende 2dehands DOM
+        5. expliciete JSON/script prijs
+
+    BELANGRIJK:
+
+    Er wordt nergens een bedrag uit de volledige
+    advertentiebeschrijving gehaald.
+    """
+
+    methods = [
+        extract_price_from_json_ld,
+        extract_price_from_meta,
+        extract_price_from_itemprop,
+        extract_price_from_known_dom,
+        extract_price_from_scripts,
+    ]
+
+    for method in methods:
+
+        price, source = method(
+            soup
+        )
+
+        if is_sane_price(price):
+            return {
+                "price": price,
+                "source": source,
+            }
+
+    return {
+        "price": None,
+        "source": None,
+    }
 
 
 # ============================================================
@@ -486,15 +850,10 @@ def get_price(text):
 # ============================================================
 
 def detect_location(location_text):
-    """
-    Controleert uitsluitend de officiële locatie die 2dehands in de
-    advertentie toont.
 
-    Plaatsnamen uit de beschrijving kunnen hierdoor niet langer
-    per ongeluk als advertentielocatie worden gebruikt.
-    """
-
-    location_text = normalize(location_text)
+    location_text = normalize(
+        location_text
+    )
 
     if not location_text:
         return {
@@ -531,13 +890,18 @@ def detect_location(location_text):
         key=len,
         reverse=True,
     ):
+
         pattern = (
             r"(?<![a-z])"
             + re.escape(location)
             + r"(?![a-z])"
         )
 
-        if re.search(pattern, location_text):
+        if re.search(
+            pattern,
+            location_text,
+        ):
+
             if location in WEST_FLANDERS_LOCATIONS:
                 province = "West-Vlaanderen"
             else:
@@ -574,13 +938,6 @@ def is_tt_or_triathlon(text):
 # ============================================================
 
 def detect_power_meter(text):
-    """
-    Powermeter is OPTIONAL.
-
-    Returns True when one of the power meter keywords
-    is found.
-    """
-
     return contains_any(
         text,
         POWER_KEYWORDS,
@@ -599,10 +956,100 @@ def has_probable_size(text):
 
 
 # ============================================================
+# SEARCH PAGE PRICE EXTRACTION
+# ============================================================
+
+def extract_explicit_price_from_element(element):
+    """
+    Probeert een prijs te halen uit een element dat zelf
+    duidelijk een prijs-element is.
+
+    Dit is NIET hetzelfde als de volledige tekst van een
+    advertentiekaart scannen.
+    """
+
+    selectors = [
+        '[itemprop="price"]',
+        '[data-testid="price"]',
+        '[data-test="price"]',
+        '[data-cy="price"]',
+        '[class*="price"]',
+        '[class*="Price"]',
+    ]
+
+    for selector in selectors:
+
+        try:
+            children = element.select(
+                selector
+            )
+        except Exception:
+            children = []
+
+        for child in children:
+
+            content = (
+                child.get("content")
+                or child.get_text(
+                    " ",
+                    strip=True,
+                )
+            )
+
+            price = parse_price_value_from_text(
+                content
+            )
+
+            if is_sane_price(price):
+                return price
+
+    return None
+
+
+def extract_search_card_price(link):
+    """
+    Probeert de prijs uit de zoekresultaatkaart te halen.
+
+    We gaan vanaf de link omhoog naar beperkte containers.
+
+    BELANGRIJK:
+
+    We scannen nooit simpelweg de volledige kaarttekst met
+    een regex. Alleen expliciete price-elementen zijn geldig.
+
+    Hierdoor wordt bijvoorbeeld:
+
+        "Nieuwprijs €11.500"
+
+    niet als verkoopprijs geïnterpreteerd.
+    """
+
+    current = link
+
+    # Maximaal enkele ouders omhoog.
+    for _ in range(8):
+
+        if current is None:
+            break
+
+        price = extract_explicit_price_from_element(
+            current
+        )
+
+        if is_sane_price(price):
+            return price, "search_card_price"
+
+        current = current.parent
+
+    return None, None
+
+
+# ============================================================
 # SEARCH PAGE PARSER
 # ============================================================
 
 def extract_listing_links(html):
+
     soup = BeautifulSoup(
         html,
         "html.parser",
@@ -639,10 +1086,41 @@ def extract_listing_links(html):
                 "",
             )
 
-        results[url] = {
-            "url": url,
-            "title": title,
-        }
+        # Probeer alleen de expliciet weergegeven
+        # zoekresultaatprijs te vinden.
+        search_price, price_source = (
+            extract_search_card_price(
+                link
+            )
+        )
+
+        if url not in results:
+
+            results[url] = {
+                "url": url,
+                "title": title,
+                "search_price": search_price,
+                "search_price_source": price_source,
+            }
+
+        else:
+
+            # Als dezelfde advertentie via een andere zoekopdracht
+            # opnieuw voorkomt en daar wel een prijs wordt gevonden,
+            # bewaren we die.
+            if (
+                results[url].get(
+                    "search_price"
+                ) is None
+                and search_price is not None
+            ):
+                results[url][
+                    "search_price"
+                ] = search_price
+
+                results[url][
+                    "search_price_source"
+                ] = price_source
 
     return list(
         results.values()
@@ -654,6 +1132,7 @@ def extract_listing_links(html):
 # ============================================================
 
 def fetch(url):
+
     response = SESSION.get(
         url,
         timeout=30,
@@ -668,22 +1147,15 @@ def fetch(url):
 # LISTING DETAILS
 # ============================================================
 
-def get_listing_details(url):
-    """
-    Haalt de advertentiegegevens op.
+def get_listing_details(
+    url,
+    search_price=None,
+    search_price_source=None,
+):
 
-    PRIJS:
-        .ListingHeader-module-price
-
-    LOCATIE:
-        .SellerLocationSection-module-locationName
-        (met de officiële hz-Text classes)
-
-    De volledige pagina-tekst wordt uitsluitend gebruikt voor
-    inhoudelijke detectie zoals TT, powermeter en maat.
-    """
-
-    html = fetch(url)
+    html = fetch(
+        url
+    )
 
     soup = BeautifulSoup(
         html,
@@ -697,23 +1169,35 @@ def get_listing_details(url):
         )
     )
 
-    # ------------------------------------------------------------
+    # --------------------------------------------------------
     # TITLE
-    # ------------------------------------------------------------
+    # --------------------------------------------------------
 
     title = ""
 
     og_title = soup.find(
         "meta",
-        attrs={"property": "og:title"},
+        attrs={
+            "property": "og:title"
+        },
     )
 
-    if og_title and og_title.get("content"):
+    if (
+        og_title
+        and og_title.get("content")
+    ):
+
         title = normalize(
-            og_title.get("content")
+            og_title.get(
+                "content"
+            )
         )
 
-    if not title and soup.title:
+    if (
+        not title
+        and soup.title
+    ):
+
         title = normalize(
             soup.title.get_text(
                 " ",
@@ -721,31 +1205,47 @@ def get_listing_details(url):
             )
         )
 
-    # ------------------------------------------------------------
-    # OFFICIËLE PRIJS UIT DE DOM
-    # ------------------------------------------------------------
+    # --------------------------------------------------------
+    # AUTHORITATIVE PRICE
+    # --------------------------------------------------------
 
-    price_element = soup.select_one(
-        ".ListingHeader-module-price"
+    price_data = extract_authoritative_price(
+        soup
     )
 
-    price_text = ""
+    price = price_data.get(
+        "price"
+    )
 
-    if price_element:
-        price_text = normalize(
-            price_element.get_text(
-                " ",
-                strip=True,
+    price_source = price_data.get(
+        "source"
+    )
+
+    # --------------------------------------------------------
+    # SEARCH PAGE PRICE FALLBACK
+    # --------------------------------------------------------
+    #
+    # Alleen toegestaan wanneer de prijs expliciet uit een
+    # prijs-element op de zoekresultaatkaart afkomstig was.
+    #
+    # NOOIT een bedrag uit full_text gebruiken.
+
+    if price is None:
+
+        if is_sane_price(
+            search_price
+        ):
+
+            price = search_price
+
+            price_source = (
+                search_price_source
+                or "search_card_price"
             )
-        )
 
-    price = parse_price_value_from_text(
-        price_text
-    )
-
-    # ------------------------------------------------------------
-    # OFFICIËLE LOCATIE UIT DE DOM
-    # ------------------------------------------------------------
+    # --------------------------------------------------------
+    # OFFICIËLE LOCATIE
+    # --------------------------------------------------------
 
     location_element = soup.select_one(
         ".SellerLocationSection-module-locationName"
@@ -754,6 +1254,7 @@ def get_listing_details(url):
     location_raw = ""
 
     if location_element:
+
         location_raw = normalize(
             location_element.get_text(
                 " ",
@@ -761,9 +1262,37 @@ def get_listing_details(url):
             )
         )
 
-    # ------------------------------------------------------------
+    # Mogelijke fallback voor gewijzigde DOM.
+    if not location_raw:
+
+        location_selectors = [
+            "[class*='SellerLocationSection']",
+            "[class*='locationName']",
+            "[itemprop='addressLocality']",
+        ]
+
+        for selector in location_selectors:
+
+            element = soup.select_one(
+                selector
+            )
+
+            if not element:
+                continue
+
+            location_raw = normalize(
+                element.get_text(
+                    " ",
+                    strip=True,
+                )
+            )
+
+            if location_raw:
+                break
+
+    # --------------------------------------------------------
     # JSON-LD
-    # ------------------------------------------------------------
+    # --------------------------------------------------------
 
     json_ld_data = []
 
@@ -771,14 +1300,21 @@ def get_listing_details(url):
         "script",
         type="application/ld+json",
     ):
+
         try:
+
             raw = script.string
 
             if not raw:
                 continue
 
-            parsed = json.loads(raw)
-            json_ld_data.append(parsed)
+            parsed = json.loads(
+                raw
+            )
+
+            json_ld_data.append(
+                parsed
+            )
 
         except Exception:
             continue
@@ -787,9 +1323,10 @@ def get_listing_details(url):
         "url": url,
         "title": title,
 
-        # Officiële DOM-velden.
+        # Alleen betrouwbare prijsbronnen.
         "price": price,
-        "price_text": price_text,
+        "price_source": price_source,
+
         "location_raw": location_raw,
 
         # Alleen voor inhoudelijke detectie.
@@ -804,73 +1341,84 @@ def get_listing_details(url):
 # ============================================================
 
 def evaluate_listing(listing):
-    """
-    HARD FILTERS:
-
-    1. Price
-    2. Location
-    3. TT / triathlon
-
-    Powermeter is OPTIONAL.
-
-    Size is informational only.
-    """
 
     text = listing["text"]
 
     # --------------------------------------------------------
     # PRICE
     # --------------------------------------------------------
-    #
-    # Rechtstreeks uit .ListingHeader-module-price.
-    # Niet uit de vrije advertentietekst.
 
-    price = listing.get("price")
+    price = listing.get(
+        "price"
+    )
 
     if price is None:
+
         return {
             "match": False,
             "reason": "geen_prijs",
+            "price_source": listing.get(
+                "price_source"
+            ),
         }
 
     if price > MAX_BUDGET:
+
         return {
             "match": False,
             "reason": "boven_budget",
             "price": price,
+            "price_source": listing.get(
+                "price_source"
+            ),
         }
 
     # --------------------------------------------------------
     # LOCATION
     # --------------------------------------------------------
-    #
-    # Rechtstreeks uit .SellerLocationSection-module-locationName.
-    # Niet uit de beschrijving.
 
     location = detect_location(
-        listing.get("location_raw", "")
+        listing.get(
+            "location_raw",
+            ""
+        )
     )
 
     if not location["allowed"]:
+
         return {
             "match": False,
             "reason": "buiten_regio",
             "price": price,
-            "location": location.get("location"),
-            "location_raw": location.get("location_raw"),
+            "price_source": listing.get(
+                "price_source"
+            ),
+            "location": location.get(
+                "location"
+            ),
+            "location_raw": location.get(
+                "location_raw"
+            ),
         }
 
     # --------------------------------------------------------
     # TT / TRIATHLON
     # --------------------------------------------------------
 
-    if not is_tt_or_triathlon(text):
+    if not is_tt_or_triathlon(
+        text
+    ):
 
         return {
             "match": False,
             "reason": "geen_tt_triathlon",
             "price": price,
-            "province": location["province"],
+            "price_source": listing.get(
+                "price_source"
+            ),
+            "province": location[
+                "province"
+            ],
         }
 
     # --------------------------------------------------------
@@ -901,9 +1449,16 @@ def evaluate_listing(listing):
         "title": listing["title"],
 
         "price": price,
+        "price_source": listing.get(
+            "price_source"
+        ),
 
-        "province": location["province"],
-        "location": location["location"],
+        "province": location[
+            "province"
+        ],
+        "location": location[
+            "location"
+        ],
 
         "has_power_meter": power_meter,
         "probable_size": probable_size,
@@ -918,6 +1473,7 @@ def evaluate_listing(listing):
 # ============================================================
 
 def send_telegram(message):
+
     token = os.getenv(
         "TELEGRAM_BOT_TOKEN"
     )
@@ -927,17 +1483,21 @@ def send_telegram(message):
     )
 
     if not token:
+
         print(
             "Telegram niet geconfigureerd: "
             "TELEGRAM_BOT_TOKEN ontbreekt."
         )
+
         return False
 
     if not chat_id:
+
         print(
             "Telegram niet geconfigureerd: "
             "TELEGRAM_CHAT_ID ontbreekt."
         )
+
         return False
 
     url = (
@@ -960,27 +1520,50 @@ def send_telegram(message):
     return True
 
 
-def format_message(result, changed=False):
+def format_message(
+    result,
+    changed=False,
+):
 
     if changed:
-        header = "🔄 PRIJS/ADVERTENTIE GEWIJZIGD"
+        header = (
+            "🔄 PRIJS/ADVERTENTIE GEWIJZIGD"
+        )
     else:
         header = "🚨 NIEUWE TT-DEAL"
 
     if result["has_power_meter"]:
-        power_text = "⚡ Powermeter: JA"
+        power_text = (
+            "⚡ Powermeter: JA"
+        )
     else:
-        power_text = "⚡ Powermeter: niet gevonden"
+        power_text = (
+            "⚡ Powermeter: niet gevonden"
+        )
 
     if result["probable_size"]:
+
         size_text = (
             "📏 Maat: mogelijk interessant "
             "(54–56/M gevonden)"
         )
+
     else:
+
         size_text = (
             "📏 Maat: niet duidelijk vermeld"
         )
+
+    price_source = result.get(
+        "price_source"
+    )
+
+    if price_source:
+        price_source_text = (
+            f"🔎 Prijsbron: {price_source}"
+        )
+    else:
+        price_source_text = ""
 
     return (
         f"{header}\n\n"
@@ -990,6 +1573,7 @@ def format_message(result, changed=False):
         f"({result['province']})\n"
         f"{power_text}\n"
         f"{size_text}\n"
+        f"{price_source_text}\n"
         f"👤 Profiel: "
         f"{RIDER_HEIGHT_CM} cm / "
         f"{RIDER_INSEAM_CM} cm\n\n"
@@ -997,11 +1581,9 @@ def format_message(result, changed=False):
     )
 
 
-def send_no_matches_message(stats):
-    """
-    Telegrammelding wanneer deze run geen nieuwe matches
-    heeft opgeleverd.
-    """
+def send_no_matches_message(
+    stats
+):
 
     message = (
         "ℹ️ 2dehands TT-monitor\n\n"
@@ -1057,7 +1639,9 @@ def main():
 
     print()
     print("=" * 60)
-    print("2DEHANDS TT / TRIATHLON MONITOR")
+    print(
+        "2DEHANDS TT / TRIATHLON MONITOR"
+    )
     print("=" * 60)
 
     print(
@@ -1090,6 +1674,11 @@ def main():
     print(
         "POWER METER      = "
         "OPTIONEEL"
+    )
+
+    print(
+        "PRICE SOURCE     = "
+        "ALLEEN AUTHORITATIVE DOM / JSON / SEARCH PRICE"
     )
 
     seen = load_seen()
@@ -1128,9 +1717,38 @@ def main():
 
             for item in links:
 
-                all_candidates[
-                    item["url"]
-                ] = item
+                url = item["url"]
+
+                if url not in all_candidates:
+
+                    all_candidates[
+                        url
+                    ] = item
+
+                else:
+
+                    # Neem prijs over wanneer een andere
+                    # zoekopdracht hem wel vond.
+                    if (
+                        all_candidates[url].get(
+                            "search_price"
+                        ) is None
+                        and item.get(
+                            "search_price"
+                        ) is not None
+                    ):
+
+                        all_candidates[url][
+                            "search_price"
+                        ] = item[
+                            "search_price"
+                        ]
+
+                        all_candidates[url][
+                            "search_price_source"
+                        ] = item[
+                            "search_price_source"
+                        ]
 
             time.sleep(
                 REQUEST_DELAY_SECONDS
@@ -1167,6 +1785,7 @@ def main():
         "matches_zonder_powermeter": 0,
         "errors": 0,
         "skipped_seen": 0,
+        "rechecked_missing_price": 0,
     }
 
     for candidate in all_candidates.values():
@@ -1192,6 +1811,14 @@ def main():
         # ----------------------------------------------------
         # ONLY_NEW
         # ----------------------------------------------------
+        #
+        # BELANGRIJKE WIJZIGING:
+        #
+        # Advertenties die eerder geen prijs hadden, worden
+        # NIET permanent overgeslagen.
+        #
+        # Dit is nodig omdat de oude parser 65 advertenties
+        # met last_price=null heeft opgeslagen.
 
         if (
             ONLY_NEW
@@ -1199,12 +1826,36 @@ def main():
             and not TEST_MODE
         ):
 
-            stats["skipped_seen"] += 1
+            previous_price = previous.get(
+                "last_price"
+            )
 
-            continue
+            if previous_price is not None:
+
+                stats[
+                    "skipped_seen"
+                ] += 1
+
+                continue
+
+            else:
+
+                stats[
+                    "rechecked_missing_price"
+                ] += 1
+
+                print()
+                print(
+                    "  HERCONTROLE: "
+                    "advertentie had eerder "
+                    "geen betrouwbare prijs."
+                )
 
         inspected += 1
-        stats["inspected"] = inspected
+
+        stats[
+            "inspected"
+        ] = inspected
 
         print()
         print(
@@ -1214,7 +1865,13 @@ def main():
         try:
 
             listing = get_listing_details(
-                url
+                url,
+                search_price=candidate.get(
+                    "search_price"
+                ),
+                search_price_source=candidate.get(
+                    "search_price_source"
+                ),
             )
 
             result = evaluate_listing(
@@ -1228,6 +1885,7 @@ def main():
             old_price = None
 
             if previous:
+
                 old_price = previous.get(
                     "last_price"
                 )
@@ -1244,26 +1902,37 @@ def main():
 
             seen[url] = {
                 "last_price": current_price,
+
+                "last_price_source": listing.get(
+                    "price_source"
+                ),
+
                 "last_title": listing.get(
                     "title",
                     "",
                 ),
+
                 "last_location": result.get(
                     "location"
                 ),
+
                 "last_location_raw": result.get(
                     "location_raw"
                 ),
+
                 "last_province": result.get(
                     "province"
                 ),
+
                 "last_match": result.get(
                     "match",
                     False,
                 ),
+
                 "last_reason": result.get(
                     "reason"
                 ),
+
                 "last_has_power_meter": result.get(
                     "has_power_meter",
                     False,
@@ -1296,9 +1965,22 @@ def main():
                 )
 
                 if current_price is not None:
+
                     print(
                         f"  prijs: "
                         f"€{current_price:.0f}"
+                    )
+
+                    print(
+                        f"  prijsbron: "
+                        f"{listing.get('price_source')}"
+                    )
+
+                else:
+
+                    print(
+                        "  prijs: "
+                        "GEEN BETROUWBARE PRIJS"
                     )
 
                 continue
@@ -1307,7 +1989,9 @@ def main():
             # MATCH
             # ------------------------------------------------
 
-            stats["matches"] += 1
+            stats[
+                "matches"
+            ] += 1
 
             if result[
                 "has_power_meter"
@@ -1331,12 +2015,10 @@ def main():
                 )
             )
 
-            # We melden:
-            #
-            # 1. nieuwe advertentie
-            # 2. advertentie die vroeger geen match was
-            # 3. prijswijziging
-            # 4. TEST_MODE
+            # ------------------------------------------------
+            # NOTIFY
+            # ------------------------------------------------
+
             should_notify = (
                 TEST_MODE
                 or previous is None
@@ -1355,6 +2037,16 @@ def main():
                     "  >>> NIEUWE MATCH!"
                 )
 
+                print(
+                    f"  prijs: "
+                    f"€{current_price:.0f}"
+                )
+
+                print(
+                    f"  prijsbron: "
+                    f"{listing.get('price_source')}"
+                )
+
             else:
 
                 print(
@@ -1364,7 +2056,9 @@ def main():
 
         except Exception as exc:
 
-            stats["errors"] += 1
+            stats[
+                "errors"
+            ] += 1
 
             print(
                 f"  FOUT bij advertentie: "
@@ -1411,6 +2105,7 @@ def main():
     for item in matches:
 
         result = item["result"]
+
         changed = item["changed"]
 
         message = format_message(
@@ -1463,6 +2158,7 @@ def main():
     # --------------------------------------------------------
 
     print()
+
     print(
         f"Seen database bevat nu "
         f"{len(seen)} advertenties."
@@ -1476,6 +2172,7 @@ def main():
 # ============================================================
 
 if __name__ == "__main__":
+
     sys.exit(
         main()
     )
