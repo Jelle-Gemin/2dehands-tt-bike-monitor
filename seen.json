@@ -735,5 +735,16 @@
     "last_match": true,
     "last_reason": "match",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2428927403-scott-tt-fiets-nog-werk-aan": {
+    "last_price": 200.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "scott tt fiets (nog werk aan) (m2428927403) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "sint-maria-horebeke",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
