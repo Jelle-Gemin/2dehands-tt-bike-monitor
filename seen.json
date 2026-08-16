@@ -724,5 +724,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2420787802-trek-domane-sl6-maat-58": {
+    "last_price": 950.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "trek domane sl6 maat 58 (m2420787802) — fietsen | racefietsen — 2dehands",
+    "last_location": "Dendermonde",
+    "last_location_raw": null,
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
   }
 }
