@@ -746,5 +746,27 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2431698729-in-uitstekende-staat-verkerende-massini-tijdritfiets": {
+    "last_price": 1200.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "in uitstekende staat verkerende massini tijdritfiets (m2431698729) — fietsen | racefietsen — 2dehands",
+    "last_location": "Ieper",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2431642350-ridley-dean-fast-tt-fiets-maat-56": {
+    "last_price": 2500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "ridley dean fast tt fiets—maat 56 (m2431642350) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
