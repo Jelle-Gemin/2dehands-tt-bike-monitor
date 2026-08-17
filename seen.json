@@ -790,5 +790,38 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2426259978-canyon-speedmax-cf-slx-7-di2-s": {
+    "last_price": 6500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "canyon speedmax cf slx 7 di2 - s (m2426259978) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2432063517-prorace-sphinx-triatlonfiets-maat-56-shimano-ultegra-di2": {
+    "last_price": 2200.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "prorace sphinx triatlonfiets – maat 56 – shimano ultegra di2 (m2432063517) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2432003868-orbea-ordu-2023": {
+    "last_price": 5200.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "orbea ordu 2023 (m2432003868) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
