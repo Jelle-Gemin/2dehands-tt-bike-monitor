@@ -823,5 +823,38 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2432083061-orbea-ordu-tt-tijdritfiets-maat-m-l-perfecte-staat": {
+    "last_price": 6199.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "orbea ordu tt tijdritfiets maat m-l perfecte staat (m2432083061) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2422799604-lapierre-aircode-drs-7-0-ultegra-di2-12-speed-maat-58-xl": {
+    "last_price": 3500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "lapierre aircode drs 7.0 ultegra di2 12 speed (maat 58 / xl) (m2422799604) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2432108167-canyon-aeroad-cf-sl-2023-maat-xl": {
+    "last_price": 3300.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "canyon aeroad cf sl 2023 - maat xl (m2432108167) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
