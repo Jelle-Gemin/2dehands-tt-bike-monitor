@@ -922,5 +922,38 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2406339448-specialized-transition-tijdritfiets": {
+    "last_price": 1250.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "specialized transition tijdritfiets (m2406339448) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "beveren-leie",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2432793399-cervelo-p2-triatlon-tt-fiets": {
+    "last_price": 2500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cervelo p2 triatlon/tt-fiets (m2432793399) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2432759642-scott-foil-rc30": {
+    "last_price": 3000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "scott foil rc30 (m2432759642) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
