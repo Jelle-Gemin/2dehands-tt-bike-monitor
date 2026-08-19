@@ -889,5 +889,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2432500178-massini-tijdritfiets-in-meer-dan-voortreffelijke-staat": {
+    "last_price": 990.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "massini tijdritfiets in meer dan voortreffelijke staat (m2432500178) — fietsen | racefietsen — 2dehands",
+    "last_location": "Ieper",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2432505675-triathlon-fiets": {
+    "last_price": 5999.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "triathlon fiets (m2432505675) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
