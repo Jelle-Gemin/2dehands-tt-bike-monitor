@@ -966,5 +966,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2433321501-felt-ia-ultegra-carbon-triathlon-tijdritfiets": {
+    "last_price": 3850.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "felt ia ultegra - carbon - triathlon / tijdritfiets (m2433321501) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2433367798-cube-aerium-c-68x-slx-carbon-n-black": {
+    "last_price": 6250.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cube aerium c:68x slx carbon 'n' black (m2433367798) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
