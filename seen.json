@@ -955,5 +955,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2433184021-eddy-mercx-tt-fiets-ridley-dean-fast": {
+    "last_price": 4995.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "eddy mercx tt fiets (ridley dean fast) (m2433184021) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
