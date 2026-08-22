@@ -1010,5 +1010,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2433629527-miniatuur-koersfietsjes-mountainbike-triatlonfiets-bmx": {
+    "last_price": 11.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "miniatuur koersfietsjes - mountainbike - triatlonfiets - bmx (m2433629527) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "mechelen-aan-de-maas",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2433610983-trek-domane-2-0-groot-frame": {
+    "last_price": 2.0,
+    "last_price_source": "search_card_price",
+    "last_title": "trek domane 2.0 groot frame (m2433610983) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "erembodegem",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
