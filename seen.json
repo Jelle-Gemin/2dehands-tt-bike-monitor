@@ -1032,5 +1032,38 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2433863599-mmr-blade-tijdrit-fiets-tt-ultegra-di2-ffwd-disc-pwr-meter": {
+    "last_price": 2699.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "mmr blade tijdrit fiets tt ultegra di2 ffwd disc pwr meter (m2433863599) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2433903812-tijdrit-triatlonfiets-cervelo-p-series-maat-51": {
+    "last_price": 3700.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdrit-triatlonfiets cervelo p-series maat 51 (m2433903812) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2433811095-triatlonfiets-canyon-speedmax-cf-7-medium-te-huur": {
+    "last_price": 7.0,
+    "last_price_source": "search_card_price",
+    "last_title": "triatlonfiets canyon speedmax cf 7 - medium - te huur (m2433811095) — fietsen | racefietsen — 2dehands",
+    "last_location": "Aalst",
+    "last_location_raw": null,
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
   }
 }
