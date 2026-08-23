@@ -1076,5 +1076,16 @@
     "last_match": true,
     "last_reason": "match",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2385820922-tijdritfiets-s-works-shivv": {
+    "last_price": 1200.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets s-works shivv (m2385820922) — fietsen | racefietsen — 2dehands",
+    "last_location": "Heist",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
   }
 }
