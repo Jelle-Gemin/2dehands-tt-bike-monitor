@@ -1131,5 +1131,38 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2434316440-argon-18-e-119-medium-triathlon": {
+    "last_price": 2000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "argon 18 e-119 medium triathlon (m2434316440) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2427484222-time-machine-tm01-bmc": {
+    "last_price": 999.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "time machine (tm01) bmc (m2427484222) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "drongen",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2434804605-triathlon-pro-synop-tt-kitverlenger": {
+    "last_price": 80.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "triathlon pro synop tt-kitverlenger (m2434804605) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "grimbergen",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
