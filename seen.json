@@ -1175,5 +1175,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2435136594-ridley-dean-rs-full-carbon-tt-tijdritfiets-tubeless": {
+    "last_price": 1000.0,
+    "last_price_source": "search_card_price",
+    "last_title": "ridley dean rs full carbon tt/tijdritfiets — tubeless (m2435136594) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "lendelede",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
