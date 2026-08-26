@@ -1186,5 +1186,16 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2435196254-planet-x-tt-bike": {
+    "last_price": 700.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "planet x tt bike (m2435196254) — fietsen | racefietsen — 2dehands",
+    "last_location": "Wetteren",
+    "last_location_raw": null,
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
   }
 }
