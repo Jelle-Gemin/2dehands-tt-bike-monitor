@@ -1197,5 +1197,27 @@
     "last_match": true,
     "last_reason": "match",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2435538899-ridley-dean-tijdritfiets-medium": {
+    "last_price": 1000.0,
+    "last_price_source": "search_card_price",
+    "last_title": "ridley dean tijdritfiets medium (m2435538899) — fietsen | racefietsen — 2dehands",
+    "last_location": "Ieper",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2397457268-felt-b-triatlon-fiets-tijdrijd": {
+    "last_price": 75.0,
+    "last_price_source": "search_card_price",
+    "last_title": "felt b triatlon fiets/ tijdrijd (m2397457268) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "oud-turnhout",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
