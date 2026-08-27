@@ -1219,5 +1219,38 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2435856288-ridley-dean-fast-tt-bike": {
+    "last_price": 3000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "ridley dean fast tt bike (m2435856288) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2412932803-triatlonfiets-750-euro": {
+    "last_price": 19.0,
+    "last_price_source": "search_card_price",
+    "last_title": "triatlonfiets, 750 euro (m2412932803) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "lovendegem",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2412678615-cannondale-systemsix-carbon-ultegra-maat-56-mei-2024": {
+    "last_price": 2800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cannondale systemsix carbon ultegra – maat 56 (mei 2024) (m2412678615) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
