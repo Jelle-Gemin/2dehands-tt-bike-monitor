@@ -1274,5 +1274,27 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2436266535-triathlon-pro-synop-hf-kitverlenger": {
+    "last_price": 1.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "triathlon pro synop hf kitverlenger (m2436266535) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "grimbergen",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2436147144-specialized-shiv-tt": {
+    "last_price": 5300.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "specialized shiv tt (m2436147144) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
