@@ -1252,5 +1252,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2436056544-specialized-venge-vias-pro-di2-m58": {
+    "last_price": 2500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "specialized venge vias pro di2 m58 (m2436056544) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2436029827-jongensfiets-merk-frog": {
+    "last_price": 375.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "jongensfiets merk frog (m2436029827) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "grimbergen",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
