@@ -1296,5 +1296,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2436390065-tijdrit-module-steven-super-trofeo-large": {
+    "last_price": 625.0,
+    "last_price_source": "search_card_price",
+    "last_title": "tijdrit module steven super trofeo large (m2436390065) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "balen",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
