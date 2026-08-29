@@ -1307,5 +1307,27 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2436728854-giant-trinity-advanced-pro-2019": {
+    "last_price": 2900.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "giant trinity advanced pro 2019 (m2436728854) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2436575820-miniatuur-koersfietsjes-mountainbike-triatlonfiets-bmx": {
+    "last_price": 11.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "miniatuur koersfietsjes - mountainbike - triatlonfiets - bmx (m2436575820) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "mechelen-aan-de-maas",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
