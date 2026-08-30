@@ -1329,5 +1329,16 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2436805692-fuji-tijdritfiets-triathlonfiets-in-meer-dan-prima-staat": {
+    "last_price": 1300.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "fuji tijdritfiets / triathlonfiets in meer dan prima staat (m2436805692) — fietsen | racefietsen — 2dehands",
+    "last_location": "Kortrijk",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
   }
 }
