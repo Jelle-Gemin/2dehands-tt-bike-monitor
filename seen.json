@@ -1340,5 +1340,60 @@
     "last_match": true,
     "last_reason": "match",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2437178478-s-works-shiv": {
+    "last_price": 8000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "s-works shiv (m2437178478) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2437124123-tijritfiets-triatlonfiets": {
+    "last_price": 950.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijritfiets/triatlonfiets (m2437124123) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "oosteeklo",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2437146011-trek-speedconcept-slr6-axs-size58": {
+    "last_price": 6500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "trek speedconcept slr6 axs size58 (m2437146011) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2437153363-argon-18-e-119-maat-m": {
+    "last_price": 1750.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "argon 18 e-119 maat m (m2437153363) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2437117686-triathlonfiets-ridley-dean-fast": {
+    "last_price": 3000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "triathlonfiets ridley dean fast (m2437117686) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
