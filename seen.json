@@ -1417,5 +1417,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2437404559-bmc-tijdmachine-tm01": {
+    "last_price": 2500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "bmc tijdmachine tm01 (m2437404559) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2437511386-trek-madone-9-koersfiets": {
+    "last_price": 1099.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "trek madone 9 koersfiets (m2437511386) — fietsen | racefietsen — 2dehands",
+    "last_location": "Oostkamp",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
   }
 }
