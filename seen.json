@@ -1439,5 +1439,16 @@
     "last_match": true,
     "last_reason": "match",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2437799152-tt-bike-triatlon-fiets-cervelo-p-series": {
+    "last_price": 850.0,
+    "last_price_source": "search_card_price",
+    "last_title": "tt-bike / triatlon fiets cervelo p-series (m2437799152) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "verrebroek",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
