@@ -1461,5 +1461,27 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2438193536-scott-plasma-3-premium": {
+    "last_price": 2500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "scott plasma 3 premium (m2438193536) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2438172521-giant-trinity-advanced-pro-2019": {
+    "last_price": 2900.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "giant trinity advanced pro 2019 (m2438172521) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
