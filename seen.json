@@ -1494,5 +1494,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2438525266-cervelo-p3-tijdrit-triathlonfiets": {
+    "last_price": 1600.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cervélo p3 - tijdrit/triathlonfiets (m2438525266) — fietsen | racefietsen — 2dehands",
+    "last_location": "Temse",
+    "last_location_raw": null,
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2438513761-prorace-sphinx-dsq-triatlonfiets": {
+    "last_price": 3500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "prorace sphinx dsq - triatlonfiets (m2438513761) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
