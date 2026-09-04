@@ -1516,5 +1516,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2438172521-tijdritfiets-giant-trinity-advanced-pro-2019": {
+    "last_price": 2900.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets giant trinity advanced pro 2019 (m2438172521) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2438843181-trek-speed-concept-slr6-axs-2024-kader-2025-maat-58-large": {
+    "last_price": 6500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "trek speed concept slr6 axs 2024 (kader 2025) maat 58/large (m2438843181) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
