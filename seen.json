@@ -1560,5 +1560,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2439159616-tijdritfiets-triathlonfiets-cervelo-54": {
+    "last_price": 1500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets / triathlonfiets cervelo 54 (m2439159616) — fietsen | racefietsen — 2dehands",
+    "last_location": "Evergem",
+    "last_location_raw": null,
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2439111134-tijdritfiets-sportivo-in-absoluut-goede-staat": {
+    "last_price": 1050.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets sportivo in absoluut goede staat (m2439111134) — fietsen | racefietsen — 2dehands",
+    "last_location": "Roeselare",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
   }
 }
