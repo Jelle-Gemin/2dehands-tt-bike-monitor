@@ -1549,5 +1549,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2439076896-tijdritfiets-cervelo-p3-incl-vol-wiel-zipp-powermeter": {
+    "last_price": 3250.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets cervélo p3 (incl. vol wiel zipp + powermeter) (m2439076896) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
