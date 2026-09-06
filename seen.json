@@ -1615,5 +1615,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2439787453-orbea-ordu-tijdritfiets-triathlon-maat-m-l": {
+    "last_price": 6000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "orbea ordu – tijdritfiets/triathlon – maat m/l (m2439787453) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2439765264-wilier-triestina-cento1-sr-tijdrit-tt-triathlon": {
+    "last_price": 900.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "wilier triestina cento1 sr – tijdrit / tt / triathlon (m2439765264) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "kemzeke",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
