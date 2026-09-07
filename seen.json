@@ -1692,5 +1692,38 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2440181077-ridley-dean-tijdritfiets": {
+    "last_price": 2500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "ridley dean tijdritfiets (m2440181077) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2440217000-frameset-racefiets-tt-fiets-look-576": {
+    "last_price": 200.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "frameset racefiets tt fiets look 576 (m2440217000) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "lembeek",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2440202899-onderdelen-racefiets-ultegra": {
+    "last_price": 80.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "onderdelen racefiets ultegra (m2440202899) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "lembeek",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
