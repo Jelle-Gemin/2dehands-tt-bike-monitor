@@ -1637,5 +1637,49 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2440026981-carbon-tijdritfiets-uitgerust-met-een-shimano-ultegra": {
+    "last_price": 950.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "carbon tijdritfiets uitgerust met een shimano ultegra (m2440026981) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "oudenburg",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2440003215-bmc-time-machine-tijdritfiets-triathlonfiets-di2-zgan": {
+    "last_price": 1950.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "bmc time machine - tijdritfiets - triathlonfiets- di2 - zgan (m2440003215) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2440006847-triatlonfiets-tijdritfiets": {
+    "last_price": 2250.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "triatlonfiets/tijdritfiets (m2440006847) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2440023752-specialized-shiv-tt-disc": {
+    "last_price": 8500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "specialized shiv tt disc (m2440023752) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
