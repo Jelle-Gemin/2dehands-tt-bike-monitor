@@ -1681,5 +1681,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2440048103-stevens-supertrofeo-tt-fiets-in-uitstekende-staat": {
+    "last_price": 1800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "stevens supertrofeo tt fiets in uitstekende staat (m2440048103) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
