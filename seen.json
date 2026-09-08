@@ -1725,5 +1725,38 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2440386361-zannata-evo-tijdritfiets-triathlonfiets-zgan": {
+    "last_price": 1750.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "zannata evo tijdritfiets / triathlonfiets - zgan (m2440386361) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2440425160-s-works-shiv-tijdritfiets": {
+    "last_price": 6000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "s-works shiv tijdritfiets (m2440425160) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2440484441-specialized-s-works-shiv-tt-dura-ace-stealth-wheels": {
+    "last_price": 28.0,
+    "last_price_source": "search_card_price",
+    "last_title": "specialized s-works shiv tt – dura-ace – stealth wheels (m2440484441) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "itegem",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
