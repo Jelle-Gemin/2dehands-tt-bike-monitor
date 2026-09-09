@@ -1835,5 +1835,38 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2440889318-zannata-evo-tijdritfiets-triathlonfiets-in-winkelstaat": {
+    "last_price": 1300.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "zannata evo tijdritfiets / triathlonfiets in winkelstaat. (m2440889318) — fietsen | racefietsen — 2dehands",
+    "last_location": "Kortrijk",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2440933019-cervelo-p3-tijdritfiets-met-dicht-wiel-en-powermeter-pedalen": {
+    "last_price": 2099.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cervélo p3 tijdritfiets met dicht wiel en powermeter pedalen (m2440933019) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2440930540-zannata-z112-evo-tijdritfiets-dicht-wiel-powermeter-pedalen": {
+    "last_price": 2299.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "zannata z112 evo tijdritfiets, dicht wiel powermeter pedalen (m2440930540) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
