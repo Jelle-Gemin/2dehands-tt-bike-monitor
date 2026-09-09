@@ -1791,5 +1791,38 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2440675303-specialized-shiv-triathlon-tijdritfiets-maat-s": {
+    "last_price": 1750.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "specialized shiv triathlon/tijdritfiets maat s (m2440675303) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2440570414-zannata-z112-evo-tijdritfiets-dicht-wiel-powermeter-pedalen": {
+    "last_price": 2299.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "zannata z112 evo tijdritfiets, dicht wiel powermeter pedalen (m2440570414) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2440675769-vintage-koersfiets": {
+    "last_price": 28.0,
+    "last_price_source": "search_card_price",
+    "last_title": "vintage koersfiets (m2440675769) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "zoersel & deel brecht",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
