@@ -1868,5 +1868,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2412932803-triatlonfiets-700-euro": {
+    "last_price": 19.0,
+    "last_price_source": "search_card_price",
+    "last_title": "triatlonfiets, 700 euro (m2412932803) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "lovendegem",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2441001754-trek-equinox-tt-teambike-us-postal-58": {
+    "last_price": 1500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "trek equinox tt-teambike us postal (58) (m2441001754) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "eeklo",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
