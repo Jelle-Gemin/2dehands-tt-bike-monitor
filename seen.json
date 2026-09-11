@@ -1945,5 +1945,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2437347215-tt-stuur-syncros-creston": {
+    "last_price": 180.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tt-stuur syncros creston (m2437347215) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "zoersel & deel brecht",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
