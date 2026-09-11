@@ -1934,5 +1934,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2441451733-tijdritfiets-cervelo-p2-ultegra-di2-11-speed-3-wielsets": {
+    "last_price": 2500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets cervélo p2, ultegra di2 11 speed - 3 wielsets (m2441451733) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
