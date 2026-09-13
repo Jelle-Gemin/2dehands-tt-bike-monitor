@@ -1978,5 +1978,60 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2442191122-cervelo-p3-carbon-triathlon-tijdritfiets-maat-54": {
+    "last_price": 800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cervélo p3 carbon triathlon / tijdritfiets - maat 54 (m2442191122) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "haut-ittre",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2441808628-tijdritfiets-triatlon-fiets": {
+    "last_price": 1500.0,
+    "last_price_source": "search_card_price",
+    "last_title": "tijdritfiets /triatlon fiets (m2441808628) — fietsen | racefietsen — 2dehands",
+    "last_location": "Ruien + Deel Van Avelgem En Waarmaarde",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2442094911-orbea-ordu-m30i-ltd-2023-maat-s": {
+    "last_price": 4750.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "orbea ordu m30i ltd – 2023 – maat s (m2442094911) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2442183928-zannata-z112-evo-tijdritfiets-dicht-wiel-quarq-powermeter": {
+    "last_price": 2099.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "zannata z112 evo tijdritfiets, dicht wiel, quarq powermeter (m2442183928) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2442182054-cervelo-p3-tijdritfiets-met-dicht-wiel-en-powermeter-pedalen": {
+    "last_price": 1650.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cervélo p3 tijdritfiets met dicht wiel en powermeter pedalen (m2442182054) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "rotterdam, nederland",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
