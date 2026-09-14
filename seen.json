@@ -2044,5 +2044,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2442648452-canyon-speedmax-cs-clx-tijdritfiets": {
+    "last_price": 3150.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "canyon speedmax cs clx tijdritfiets (m2442648452) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
