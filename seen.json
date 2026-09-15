@@ -2088,5 +2088,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2442937381-top-deal-giant-defy-advanced-pro-1-ultegra-di2-powermeter": {
+    "last_price": 3500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "top deal! giant defy advanced pro 1–ultegra di2 – powermeter (m2442937381) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
