@@ -2055,5 +2055,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2442860174-cube-aerium-tt": {
+    "last_price": 4800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cube aerium tt (m2442860174) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2442917110-colnago-super-sprint": {
+    "last_price": 400.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "colnago super sprint (m2442917110) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "hasselt",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
