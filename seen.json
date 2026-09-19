@@ -2209,5 +2209,38 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2444311901-prachtige-retro-concorde-tijdritfiets": {
+    "last_price": 600.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "prachtige retro concorde tijdritfiets (m2444311901) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "tessenderlo",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2444318134-canyon-speedmax-cfr-tt-large": {
+    "last_price": 6950.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "canyon speedmax cfr tt - large (m2444318134) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2444346523-nieuwstaat-cube-aerium-tt-maat-m-apr-2026": {
+    "last_price": 5800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "nieuwstaat cube aerium tt, maat m, apr 2026 (m2444346523) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
