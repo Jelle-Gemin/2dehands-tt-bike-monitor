@@ -2176,5 +2176,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2443829971-triathlonfiets-isaac-inclusief-ffwd-f6r-wielen": {
+    "last_price": 1150.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "triathlonfiets isaac, inclusief ffwd f6r wielen (m2443829971) — fietsen | racefietsen — 2dehands",
+    "last_location": "Roeselare",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
   }
 }
