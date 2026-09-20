@@ -2242,5 +2242,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2444570233-bmc-timemachine-disc-tm01-tt-bike": {
+    "last_price": 3900.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "bmc timemachine disc tm01 - tt-bike (m2444570233) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2442182054-mag-zsm-weg-cervelo-p3-met-dicht-wiel-en-powermeter-pedalen": {
+    "last_price": 1350.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "mag zsm weg, cervélo p3 met dicht wiel en powermeter pedalen (m2442182054) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "erps-kwerps",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
