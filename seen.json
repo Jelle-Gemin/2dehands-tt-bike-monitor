@@ -2264,5 +2264,16 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2444915349-specialized-sworks-shiv-tt-tri-disc": {
+    "last_price": 6500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "specialized sworks shiv tt/tri disc (m2444915349) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
