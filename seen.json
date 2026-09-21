@@ -2275,5 +2275,82 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2445205877-ridley-dean-tijdritfiets": {
+    "last_price": 2200.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "ridley dean tijdritfiets (m2445205877) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2445185550-prachtige-retro-concorde-tijdritfiets": {
+    "last_price": 600.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "prachtige retro concorde tijdritfiets (m2445185550) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "eindhout",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2445259307-tijdritfiets-triathlonfiets-canyon-speedmax-cf-8-powermeter": {
+    "last_price": 3600.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets/triathlonfiets canyon speedmax cf 8 powermeter (m2445259307) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2445259412-tijdrit-fiets-orbea-ordu-maat-s-m": {
+    "last_price": 4200.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdrit fiets orbea ordu maat s/m (m2445259412) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2437117686-triathlonfiets-ridley-dean-fast-moet-weg-voor-27-sept": {
+    "last_price": 2500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "triathlonfiets ridley dean fast moet weg voor 27 sept (m2437117686) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2445214008-canyon-speedmax-cf-slx-8-di2-disc-maat-m": {
+    "last_price": 6500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "canyon speedmax cf slx 8 di2 disc maat m (m2445214008) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2445205965-trainingsset-triatlon-complete-fiets-smarttrainer": {
+    "last_price": 600.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "trainingsset triatlon (complete fiets + smarttrainer) (m2445205965) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "gentbrugge",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
