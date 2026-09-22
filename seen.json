@@ -2363,5 +2363,49 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2445547111-s-works-shiv-tijdritfiets": {
+    "last_price": 1300.0,
+    "last_price_source": "search_card_price",
+    "last_title": "s-works shiv tijdritfiets (m2445547111) — fietsen | racefietsen — 2dehands",
+    "last_location": "Heist-Op-Den-Berg",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2445534941-retro-concorde-tijdritfiets": {
+    "last_price": 500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "retro concorde tijdritfiets (m2445534941) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "tessenderlo",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2445578411-merida-time-warp-tijdritfiets-dura-ace-dt-swiss-arc-1100": {
+    "last_price": 2099.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "merida time warp tijdritfiets – dura-ace + dt swiss arc 1100 (m2445578411) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2445531096-magnifieke-thompson-tijdritfiets-triathlonfiets-m-z-wielen": {
+    "last_price": 1800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "magnifieke thompson tijdritfiets / triathlonfiets m/z wielen (m2445531096) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
