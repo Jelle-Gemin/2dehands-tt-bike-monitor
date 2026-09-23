@@ -2429,5 +2429,16 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2445897189-prachtige-retro-concorde-tijdritfiets": {
+    "last_price": 450.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "prachtige retro concorde tijdritfiets (m2445897189) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "tessenderlo",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
