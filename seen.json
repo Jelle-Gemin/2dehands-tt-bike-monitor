@@ -2407,5 +2407,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2445716602-cannondale-systemsix-carbon-ultegra-maat-56-mei-2024": {
+    "last_price": 2000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cannondale systemsix carbon ultegra — maat 56 (mei 2024) (m2445716602) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2445673284-miniatuur-koersfietsjes-mountainbike-triatlonfiets": {
+    "last_price": 11.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "miniatuur koersfietsjes - mountainbike - triatlonfiets (m2445673284) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "mechelen-aan-de-maas",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
