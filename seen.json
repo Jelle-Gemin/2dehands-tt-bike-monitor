@@ -2440,5 +2440,49 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2445578411-merida-time-warp-tijdritfiets-dura-ace-di2-dt-swiss-arc1100": {
+    "last_price": 2099.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "merida time warp tijdritfiets–dura-ace di2-dt swiss arc1100 (m2445578411) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2445979309-orbea-ordu-m30i-ltd-ml-di2": {
+    "last_price": 4000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "orbea ordu m30i ltd ml di2 (m2445979309) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2445259412-tijdritfiets-orbea-ordu-maat-s-m": {
+    "last_price": 4200.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets orbea ordu maat s/m (m2445259412) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2440484441-specialized-s-works-shiv-tt-tijdritfiets-stealth-wheels": {
+    "last_price": 4500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "specialized s-works shiv tt – tijdritfiets – stealth wheels (m2440484441) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
