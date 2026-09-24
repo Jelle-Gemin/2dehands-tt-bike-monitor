@@ -2484,5 +2484,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2445531096-magnifiek-thompson-tijdritfiets-kader": {
+    "last_price": 1300.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "magnifiek thompson tijdritfiets kader (m2445531096) — fietsen | racefietsen — 2dehands",
+    "last_location": "Ieper",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": true
   }
 }
