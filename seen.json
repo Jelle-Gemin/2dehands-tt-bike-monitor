@@ -2495,5 +2495,27 @@
     "last_match": true,
     "last_reason": "match",
     "last_has_power_meter": true
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2446136700-giant-propel-advanced-2-carbon-shimano-105-11-speed-velgrem": {
+    "last_price": 800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "giant propel advanced 2 carbon shimano 105 11-speed velgrem (m2446136700) — fietsen | racefietsen — 2dehands",
+    "last_location": "Kortrijk",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2442937381-topdeal-giant-defy-advanced-pro1-ultegra-di2-powermeter": {
+    "last_price": 1.0,
+    "last_price_source": "search_card_price",
+    "last_title": "🔥topdeal! giant defy advanced pro1 ultegra di2 + powermeter (m2442937381) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "putte",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
