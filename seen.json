@@ -2528,5 +2528,38 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2446460624-magnifiek-thompson-tijdritfiets-triathlonfiets-kader-zgan": {
+    "last_price": 1300.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "magnifiek thompson tijdritfiets / triathlonfiets kader zgan (m2446460624) — fietsen | racefietsen — 2dehands",
+    "last_location": "Ieper",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": true
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2446498735-cervelo-clm-tijdritfiets": {
+    "last_price": 8500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cervelo clm — tijdritfiets (m2446498735) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2446488166-tt-sensa-di2": {
+    "last_price": 2350.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tt sensa di2. (m2446488166) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
