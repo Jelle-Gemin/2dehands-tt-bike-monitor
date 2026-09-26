@@ -2594,5 +2594,16 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2447057447-magnifieke-thompson-tijdritfiets-triathlonfiets-zgan": {
+    "last_price": 1800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "magnifieke thompson tijdritfiets / triathlonfiets - zgan (m2447057447) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
