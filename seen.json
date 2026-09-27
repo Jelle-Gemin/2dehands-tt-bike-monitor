@@ -2605,5 +2605,38 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2447260093-triatlon-bike-merida-time-warp": {
+    "last_price": 340.0,
+    "last_price_source": "search_card_price",
+    "last_title": "triatlon bike merida time warp (m2447260093) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "lommel",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2442937381-racefiets-giant-defy-advanced-pro1-ultegra-di2-powermeter": {
+    "last_price": 23.0,
+    "last_price_source": "search_card_price",
+    "last_title": "racefiets! giant defy advanced pro1 ultegra di2 + powermeter (m2442937381) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "putte",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2447213744-orbea-ordu-m20iltd": {
+    "last_price": 6000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "orbea ordu m20iltd (m2447213744) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
