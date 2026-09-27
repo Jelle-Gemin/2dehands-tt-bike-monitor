@@ -2649,5 +2649,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2447502216-eddy-merckx-tt-fiets": {
+    "last_price": 3850.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "eddy merckx tt fiets (m2447502216) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
