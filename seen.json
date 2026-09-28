@@ -2660,5 +2660,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2447583671-canyon-endurace-cf-slx-di2": {
+    "last_price": 2700.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "canyon endurace cf slx di2 (m2447583671) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
