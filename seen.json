@@ -2671,5 +2671,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2447767591-cervelo-p5-six-maat-51-triathlonfiets-2-wielsets": {
+    "last_price": 2000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cervélo p5 six - maat 51 triathlonfiets - 2 wielsets (m2447767591) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
