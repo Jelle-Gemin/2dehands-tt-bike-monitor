@@ -2682,5 +2682,38 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2448058223-cervelo-p5-54cm-dura-ace-di2-12-speed-disc-tt-wielen": {
+    "last_price": 4700.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cervelo p5 54cm dura ace di2 12 speed disc + tt wielen (m2448058223) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2447988155-triathlon-bike-ku-cycle-m": {
+    "last_price": 7000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "triathlon bike - kù cycle m (m2447988155) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2072667458-merida-time-warp-tri-triathlon-maat-s-nieuw-uitverkoop": {
+    "last_price": 4999.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "merida time warp tri triathlon maat s nieuw uitverkoop (m2072667458) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
