@@ -2825,5 +2825,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2449631719-felt-ia-advanced-disc-di2-pwr-mtr": {
+    "last_price": 5750.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "felt ia advanced disc di2 pwr mtr (m2449631719) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
