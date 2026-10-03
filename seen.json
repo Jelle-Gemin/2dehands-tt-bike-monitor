@@ -2803,5 +2803,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2449600810-racefiets": {
+    "last_price": 4199.0,
+    "last_price_source": "search_card_price",
+    "last_title": "racefiets (m2449600810) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2442937381-giant-defy-advanced-pro1-ultegra-di2-powermeter": {
+    "last_price": 3000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "giant defy advanced pro1 ultegra di2 + powermeter (m2442937381) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
