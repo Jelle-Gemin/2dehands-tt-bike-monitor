@@ -2858,5 +2858,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2450054490-zannata-z112-evo-tijdritfiets-ultegra-11sp-maat-54": {
+    "last_price": 1490.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "zannata z112 evo tijdritfiets – ultegra 11sp – maat 54 (m2450054490) — fietsen | racefietsen — 2dehands",
+    "last_location": "Ingelmunster",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": true
   }
 }
