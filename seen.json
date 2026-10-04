@@ -2836,5 +2836,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2449856899-canyon-speedmax-maat-medium": {
+    "last_price": 3500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "canyon speedmax(maat medium) (m2449856899) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2449917610-scott-addict-gravel-2024-maat-s": {
+    "last_price": 1800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "scott addict gravel 2024 maat s (m2449917610) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
