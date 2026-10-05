@@ -2891,5 +2891,38 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2450481993-cervelo-p5-tijdrit-triathlon-fiets-mt-54-56": {
+    "last_price": 4000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cervelo p5 tijdrit/ triathlon fiets mt. 54/56 (m2450481993) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2450482080-racefiets-felt": {
+    "last_price": 1000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "racefiets felt (m2450482080) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "oud-turnhout",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2450471202-canyon-aeroad-cfr-frame-extra-s": {
+    "last_price": 3500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "canyon aeroad cfr frame + extra’s (m2450471202) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
