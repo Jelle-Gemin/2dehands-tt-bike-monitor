@@ -2869,5 +2869,27 @@
     "last_match": true,
     "last_reason": "match",
     "last_has_power_meter": true
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2450178729-sportivo-triathlonfiets-in-prima-staat-met-of-zonder-wielen": {
+    "last_price": 975.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "sportivo triathlonfiets in prima staat met of zonder wielen (m2450178729) — fietsen | racefietsen — 2dehands",
+    "last_location": "Kortrijk",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2450342091-orbea-tt-tijdrit-triatlon-xl": {
+    "last_price": 2300.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "orbea tt tijdrit triatlon xl (m2450342091) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
