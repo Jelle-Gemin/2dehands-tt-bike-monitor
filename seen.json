@@ -2924,5 +2924,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2450572377-triatlon-tijdritfiets-wilier-blade-maat-l": {
+    "last_price": 2500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "triatlon / tijdritfiets wilier blade maat l (m2450572377) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2450607389-mooie-racefiets-van-giant": {
+    "last_price": 850.0,
+    "last_price_source": "search_card_price",
+    "last_title": "mooie racefiets van giant (m2450607389) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "grimbergen",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
