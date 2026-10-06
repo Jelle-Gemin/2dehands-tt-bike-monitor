@@ -2946,5 +2946,49 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2450795531-tijdritfiets-triatlon-eddy-merckx": {
+    "last_price": 3500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets/triatlon - eddy merckx (m2450795531) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2450777478-brixia-alata-aero-maat-52": {
+    "last_price": 1800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "brixia alata aero - maat 52 (m2450777478) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2450704381-retro-koersfiets-55-single-speed-fixie": {
+    "last_price": 115.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "retro koersfiets (55) single speed “fixie” (m2450704381) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "sint-amands",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2442937381-giant-defy-advanced-pro1-full-carbon-ultegra-di2-powermeter": {
+    "last_price": 3000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "giant defy advanced pro1 full carbon ultegra di2 powermeter (m2442937381) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
