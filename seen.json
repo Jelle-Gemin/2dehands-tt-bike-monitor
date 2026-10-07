@@ -3001,5 +3001,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2451221598-shimano-dura-ace-st-r9170-di2": {
+    "last_price": 190.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "shimano dura- ace st-r9170 di2 (m2451221598) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "genk",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2451085766-velo-de-triathlon-granville": {
+    "last_price": 900.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "vélo de triathlon granville (m2451085766) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "olloy-sur-viroin",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
