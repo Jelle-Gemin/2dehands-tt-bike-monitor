@@ -3023,5 +3023,38 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2451530666-cube-aerium-c-68-tt-tijdrit-triathlon": {
+    "last_price": 4750.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cube aerium c:68 tt tijdrit triathlon (m2451530666) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2451545815-cannondale-tt-superslice": {
+    "last_price": 2917.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cannondale tt superslice (m2451545815) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2451578438-tijdritfiet-parlee-ttir-sram-etap-disc": {
+    "last_price": 3500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiet parlee ttir sram etap disc (m2451578438) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
