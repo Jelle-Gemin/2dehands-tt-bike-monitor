@@ -3056,5 +3056,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2451714337-miniatuur-koersfietsjes-mountainbike-triatlonfiets": {
+    "last_price": 11.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "miniatuur koersfietsjes - mountainbike - triatlonfiets (m2451714337) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "mechelen-aan-de-maas",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
