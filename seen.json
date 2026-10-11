@@ -3078,5 +3078,27 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2452527494-orbea-ordu-omx-tt-triatlon-fiets": {
+    "last_price": 4500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "orbea ordu omx tt triatlon fiets (m2452527494) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2444346523-nieuwstaat-cube-aerium-c68x-maat-m-apr-2026": {
+    "last_price": 5800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "nieuwstaat cube aerium c68x, maat m, apr 2026 (m2444346523) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
