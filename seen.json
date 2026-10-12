@@ -3122,5 +3122,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2452952816-s-works-shiv-tijdritfiets": {
+    "last_price": 3250.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "s-works shiv tijdritfiets (m2452952816) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2452851719-specialized-shiv-triathlon-tijdritfiets-zo-goed-als-nieuw": {
+    "last_price": 1950.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "specialized shiv triathlon / tijdritfiets -zo goed als nieuw (m2452851719) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
