@@ -3199,5 +3199,71 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2453395747-mooie-retro-gazelle-tijdritfiets": {
+    "last_price": 850.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "mooie retro gazelle tijdritfiets (m2453395747) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "veerle",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2453415579-complete-triathlonfiets-tijdritfiets-tt-fiets-sportivo": {
+    "last_price": 950.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "complete triathlonfiets / tijdritfiets / tt fiets sportivo (m2453415579) — fietsen | racefietsen — 2dehands",
+    "last_location": "Kortrijk",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2453473295-de-rosa-tt-01-tijdritfiets-dura-ace-di2-topstaat": {
+    "last_price": 2500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "de rosa tt-01 tijdritfiets | dura-ace di2 | topstaat (m2453473295) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2453383076-specialized-shiv-triathlon-tijdritfiets-zo-goed-als-nieuw": {
+    "last_price": 1950.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "specialized shiv triathlon / tijdritfiets, zo goed als nieuw (m2453383076) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2453368274-scott-plasma-3-triathlon-bike-dura-ace-di2-2-wielsets": {
+    "last_price": 1500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "scott plasma 3 triathlon bike - dura-ace di2 - 2 wielsets (m2453368274) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "leuven",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2453432545-cube-aerium-tt": {
+    "last_price": 5800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cube aerium tt (m2453432545) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
