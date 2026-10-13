@@ -3144,5 +3144,49 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2453111063-stevens-tt-fiets-medium": {
+    "last_price": 2250.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "stevens tt fiets medium (m2453111063) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2453001361-scott-plasma-premium-tt-triatlonfiets-s": {
+    "last_price": 3750.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "scott plasma premium tt/triatlonfiets s (m2453001361) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2453008464-tt-fiets-scoperta-st-9-2-maat-l": {
+    "last_price": 1800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tt fiets scoperta st 9.2 maat l (m2453008464) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2453091095-bmc-teammachine-slr01-two-2023-maat-56": {
+    "last_price": 6850.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "bmc teammachine slr01 two 2023 - maat 56 (m2453091095) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
