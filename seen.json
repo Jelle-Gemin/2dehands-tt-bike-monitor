@@ -3265,5 +3265,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2453602503-canyon-speedmax-cf-shimano-ultegra": {
+    "last_price": 2650.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "canyon speedmax cf | shimano ultegra (m2453602503) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2453515970-s-works-tarmac-sl8-maat-61": {
+    "last_price": 6500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "s-works tarmac sl8 maat 61 (m2453515970) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
