@@ -3287,5 +3287,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2453639681-ridley-dean-tijdritfiets": {
+    "last_price": 2200.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "ridley dean tijdritfiets (m2453639681) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
