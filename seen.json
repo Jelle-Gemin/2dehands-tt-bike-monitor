@@ -3320,5 +3320,49 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2453887311-retro-gazelle-tijdritfiets": {
+    "last_price": 850.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "retro gazelle tijdritfiets (m2453887311) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "veerle",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2416868745-specialized-transition-carbon-tijdritfiets": {
+    "last_price": 890.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "specialized transition carbon tijdritfiets (m2416868745) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "lichtervelde",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2453945358-canyon-aeroad-cf-slx7-2025-di2-maat-m": {
+    "last_price": 3500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "canyon aeroad cf slx7 2025 di2 maat m (m2453945358) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2453943169-triatlonfiets-de-rosa-tt-03-dura-ace-di2-disc-carbon-wheels": {
+    "last_price": 4499.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "triatlonfiets de rosa tt-03 dura ace di2 disc+carbon wheels (m2453943169) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
