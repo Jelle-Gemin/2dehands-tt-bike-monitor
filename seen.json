@@ -3408,5 +3408,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2453368274-scott-plasma-3-triathlon-bike-dura-ace-di2-small": {
+    "last_price": 1200.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "scott plasma 3 triathlon bike - dura-ace di2 - small (m2453368274) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "leuven",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
