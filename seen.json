@@ -3386,5 +3386,27 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2454403135-retro-gazelle-tijdritfiets": {
+    "last_price": 800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "retro gazelle tijdritfiets (m2454403135) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "veerle",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2454308030-specialized-shiv-triathlon-tijdritfiets-zo-goed-als-nieuw": {
+    "last_price": 1750.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "specialized shiv triathlon / tijdritfiets ,zo goed als nieuw (m2454308030) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
