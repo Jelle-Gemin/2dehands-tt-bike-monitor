@@ -3430,5 +3430,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2454513610-mooie-retro-gazelle-tijdritfiets": {
+    "last_price": 800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "mooie retro gazelle tijdritfiets (m2454513610) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "veerle",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
