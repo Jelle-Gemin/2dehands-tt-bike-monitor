@@ -3485,5 +3485,38 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2455170204-retro-gazelle-tijdritfiets": {
+    "last_price": 800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "retro gazelle tijdritfiets (m2455170204) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "veerle",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2455191693-bmc-timemachine-01-disc-tijdritfiets-triatlonfiets": {
+    "last_price": 4800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "bmc timemachine 01 disc tijdritfiets / triatlonfiets (m2455191693) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2455093782-peugeot-triathlon-1992": {
+    "last_price": 300.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "peugeot triathlon 1992 (m2455093782) — fietsen | racefietsen — 2dehands",
+    "last_location": "Wevelgem",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
   }
 }
