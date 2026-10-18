@@ -3463,5 +3463,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2451578438-tijdritfiets-parlee-ttir-sram-etap-disc": {
+    "last_price": 3500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets parlee ttir sram etap disc (m2451578438) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2454931445-cervelo-p5-tijdrit-triathlon-fiets-mt-54-56": {
+    "last_price": 4000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cervelo p5 tijdrit/ triathlon fiets mt. 54/56 (m2454931445) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
