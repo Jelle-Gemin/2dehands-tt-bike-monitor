@@ -3584,5 +3584,38 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2455921496-retro-gazelle-duik-tijdritfiets": {
+    "last_price": 800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "retro gazelle duik tijdritfiets (m2455921496) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "veerle",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2450482080-racefiets-felt-tijdrit-tijdrijd": {
+    "last_price": 1000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "racefiets felt tijdrit tijdrijd (m2450482080) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "oud-turnhout",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2455941094-triatlonfiets-argon-18-tt-e-118-tri-axs-carbon-wheels": {
+    "last_price": 4299.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "triatlonfiets argon 18 tt e-118 tri axs + carbon wheels (m2455941094) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
