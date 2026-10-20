@@ -3562,5 +3562,27 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2455769310-trek-speedconcept-triatlon-tijdrit-fiets-maat-s": {
+    "last_price": 2500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "trek speedconcept - triatlon/tijdrit fiets - maat s (m2455769310) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2455762025-argon-18-117-disc-medium": {
+    "last_price": 3200.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "argon 18 117 disc medium (m2455762025) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
