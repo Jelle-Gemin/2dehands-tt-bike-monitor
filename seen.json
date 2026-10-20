@@ -3617,5 +3617,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2455985739-specialized-shiv-expert-compleet-en-in-nieuwstaat": {
+    "last_price": 1875.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "specialized shiv expert - compleet en in nieuwstaat (m2455985739) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2455988673-retro-koersfiets-55-single-speed-fixie": {
+    "last_price": 115.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "retro koersfiets (55) single speed “fixie” (m2455988673) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "sint-amands",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
