@@ -3639,5 +3639,38 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2456448402-retro-gazelle-tijdritfiets": {
+    "last_price": 800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "retro gazelle tijdritfiets (m2456448402) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "veerle",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2456435120-tijdritfiets-steven-super-trofeo-large": {
+    "last_price": 1250.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets steven super trofeo large (m2456435120) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "balen",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2456459042-specialized-sworks-sl8": {
+    "last_price": 5800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "specialized sworks sl8 (m2456459042) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
