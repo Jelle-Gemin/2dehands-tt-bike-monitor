@@ -3672,5 +3672,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2456585366-triathlon-fiets": {
+    "last_price": 300.0,
+    "last_price_source": "search_card_price",
+    "last_title": "triathlon fiets (m2456585366) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "nijlen",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2456670911-dolan-df4-track-bike-frame-55-cm": {
+    "last_price": 3150.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "dolan df4 track bike (frame 55 cm) (m2456670911) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
