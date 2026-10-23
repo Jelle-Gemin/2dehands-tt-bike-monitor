@@ -3694,5 +3694,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2457086909-redshift-dual-position-zadelpen": {
+    "last_price": 150.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "redshift dual position zadelpen (m2457086909) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "kuurne",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
