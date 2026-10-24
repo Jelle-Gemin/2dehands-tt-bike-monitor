@@ -3705,5 +3705,27 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2457245960-n7even-revoke-tijdritfiets-inclusief-ffwd-f6r-zgan": {
+    "last_price": 1550.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "n7even revoke tijdritfiets, inclusief ffwd f6r - zgan (m2457245960) — fietsen | racefietsen — 2dehands",
+    "last_location": "Ieper",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2457243324-specialized-shiv-expert-compleet-en-in-nieuwstaat": {
+    "last_price": 1875.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "specialized shiv expert - compleet en in nieuwstaat (m2457243324) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
