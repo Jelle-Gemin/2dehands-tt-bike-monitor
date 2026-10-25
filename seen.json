@@ -3727,5 +3727,60 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2455769310-trek-speedconcept-triatlon-tijdrit-fiets": {
+    "last_price": 2200.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "trek speedconcept - triatlon/tijdrit fiets (m2455769310) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2457758196-dt-swiss-voorwiel": {
+    "last_price": 1900.0,
+    "last_price_source": "search_card_price",
+    "last_title": "dt swiss voorwiel (m2457758196) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2457813292-canyon-aeroad-cf-slx": {
+    "last_price": 300.0,
+    "last_price_source": "search_card_price",
+    "last_title": "canyon aeroad cf slx (m2457813292) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "lommel",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2457777392-canyon-speedmax-cf-8-0-di2-l": {
+    "last_price": 3300.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "canyon speedmax cf 8.0 di2 l (m2457777392) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2457755774-fiets": {
+    "last_price": 2595.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "fiets (m2457755774) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
