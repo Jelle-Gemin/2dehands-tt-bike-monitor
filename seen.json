@@ -3826,5 +3826,71 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2458355390-felt-b16-tijdritfiets-ffwd-carbon-discwielset-maat-l": {
+    "last_price": 2200.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "felt b16 tijdritfiets – ffwd carbon discwielset – maat l (m2458355390) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2458456538-canyon-tijdritfiets-aeroad-cf": {
+    "last_price": 1250.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "canyon tijdritfiets aeroad cf (m2458456538) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "lommel",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2458423232-eddy-merckx-tijdritfiets-maat-medium": {
+    "last_price": 2000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "eddy merckx tijdritfiets maat medium (m2458423232) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2458337662-orbea-ordu-triatlon-tijdrifiets": {
+    "last_price": 5199.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "orbea ordu triatlon/tijdrifiets (m2458337662) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2420256948-trek-emonda-sl7-sram-force-axs-12v-powermeter": {
+    "last_price": 2000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "trek emonda sl7 sram force axs 12v powermeter (m2420256948) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2458450697-a-vendre-velo-de-triathlon-felt-ia-frd-2-0-neuf-neuf-neuf": {
+    "last_price": 2.0,
+    "last_price_source": "search_card_price",
+    "last_title": "a vendre vélo de triathlon felt ia frd 2.0 neuf neuf neuf (m2458450697) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "tervuren",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
