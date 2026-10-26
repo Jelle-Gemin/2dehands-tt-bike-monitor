@@ -3793,5 +3793,38 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2458237309-tijdritfiets-specialized-s-works-zipp-carbon-wielen": {
+    "last_price": 1500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets specialized s-works zipp carbon wielen (m2458237309) — fietsen | racefietsen — 2dehands",
+    "last_location": "Dendermonde",
+    "last_location_raw": null,
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2458174499-tijdritfiets-steven-super-trofeo-large": {
+    "last_price": 1250.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets steven super trofeo large (m2458174499) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "balen",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2458180225-trek-equinox-tt-teambike-us-postal": {
+    "last_price": 1500.0,
+    "last_price_source": "search_card_price",
+    "last_title": "trek equinox tt-teambike us postal (m2458180225) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "eeklo",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
