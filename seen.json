@@ -3892,5 +3892,49 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2458695809-nichelson-tempus-carbon-tijdrit-triatlon-koersfiets-ultegra": {
+    "last_price": 500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "nichelson tempus carbon tijdrit/triatlon koersfiets -ultegra (m2458695809) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "gentbrugge",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2458811502-orbea-ordu-tijdrit-triatlonfiets-ultegra-di2-powermeter": {
+    "last_price": 2800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "orbea ordu tijdrit/triatlonfiets - ultegra di2 - powermeter (m2458811502) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2458679568-miniatuur-koersfietsjes-mountainbike-triatlonfiets": {
+    "last_price": 11.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "miniatuur koersfietsjes - mountainbike - triatlonfiets (m2458679568) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "mechelen-aan-de-maas",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2458801938-brixia-alata-aero-maat-52": {
+    "last_price": 1700.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "brixia alata (aero) - maat 52 (m2458801938) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "duffel",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
