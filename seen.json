@@ -3936,5 +3936,27 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2459034343-cervelo-p4-triatlon-chronofiets": {
+    "last_price": 4.0,
+    "last_price_source": "search_card_price",
+    "last_title": "cervelo p4 triatlon/chronofiets (m2459034343) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "huldenberg",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2459030481-cervelo-triathlon-chrono-p4-fiets": {
+    "last_price": 4.0,
+    "last_price_source": "search_card_price",
+    "last_title": "cervelo triathlon/chrono p4-fiets (m2459030481) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "huldenberg",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
