@@ -4013,5 +4013,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2459791911-tijdritfiets-triatlonfiets-isaac-maat-s": {
+    "last_price": 2100.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets/triatlonfiets isaac maat s (m2459791911) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2459659401-tijdritfiets-triathlonfiets-canyon-speedmax-cf-8-powermeter": {
+    "last_price": 3600.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets/triathlonfiets canyon speedmax cf 8 powermeter (m2459659401) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
