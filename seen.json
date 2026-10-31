@@ -4035,5 +4035,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2460322315-ridley-dean-tijdritfiets": {
+    "last_price": 1950.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "ridley dean tijdritfiets (m2460322315) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2460295869-s-works-shiv-tt": {
+    "last_price": 9000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "s-works shiv tt (m2460295869) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
