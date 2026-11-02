@@ -4123,5 +4123,49 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2460914538-tijdritfiets-stevens": {
+    "last_price": 950.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets stevens (m2460914538) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "kessel-lo",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2461020226-argon-18-e-114-triatlon-tijdrit-fiets-lightweight-wielen": {
+    "last_price": 800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "argon 18 e‑114 triatlon/tijdrit fiets + lightweight wielen! (m2461020226) — fietsen | racefietsen — 2dehands",
+    "last_location": "Ieper",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2461055156-merida-time-warp-tt": {
+    "last_price": 7250.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "merida time warp tt (m2461055156) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2460918511-shimano-ultegra-groepset-3t": {
+    "last_price": 100.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "shimano ultegra groepset 3t (m2460918511) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "lembeek",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
