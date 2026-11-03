@@ -4167,5 +4167,16 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2461155471-velo-de-triathlon-carbone": {
+    "last_price": 2300.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "vélo de triathlon carbone (m2461155471) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
