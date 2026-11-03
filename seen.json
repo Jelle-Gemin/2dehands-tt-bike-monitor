@@ -4211,5 +4211,16 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2461446726-pinarello-bolide-f-tt-frameset-maat-550": {
+    "last_price": 4999.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "pinarello bolide f tt frameset- maat 550 (m2461446726) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
