@@ -4178,5 +4178,38 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2461409014-tijdritfiets-specialized-shiv-xs": {
+    "last_price": 2000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets: specialized shiv xs (m2461409014) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2461339130-trek-speed-concept-7-0-2017-tijdrit-triatlon": {
+    "last_price": 1200.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "trek speed concept 7.0 2017 - tijdrit/triatlon (m2461339130) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "lille",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2461291484-s-works-tarmac-sl8-maat-61": {
+    "last_price": 6500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "s-works tarmac sl8 maat 61 (m2461291484) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
