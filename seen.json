@@ -4244,5 +4244,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2461854097-canyon-cf-slx-8-di2-maat-m": {
+    "last_price": 7000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "canyon cf slx 8 di2 maat m (m2461854097) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2461986835-te-koop-ceepo-stinger-merk-is-ceepo-maat-m": {
+    "last_price": 3000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "te koop ceepo stinger merk is ceepo maat m (m2461986835) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
