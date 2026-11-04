@@ -4222,5 +4222,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2461777104-tijdrit-fiets-mag-heel-snel-weg": {
+    "last_price": 30.0,
+    "last_price_source": "search_card_price",
+    "last_title": "tijdrit fiets mag heel snel weg! (m2461777104) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "hekelgem",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2461835106-sworks-shiv-tt": {
+    "last_price": 8999.99,
+    "last_price_source": "jsonld_offers",
+    "last_title": "sworks shiv tt (m2461835106) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
