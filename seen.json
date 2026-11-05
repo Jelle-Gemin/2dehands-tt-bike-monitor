@@ -4277,5 +4277,49 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2461854097-canyon-cf-slx-8-ultegra-di2-maat-m": {
+    "last_price": 7000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "canyon cf slx 8 ultegra di2 maat m (m2461854097) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2462306127-sportivo-tijdritfiets-compleet-en-in-uitmuntende-staat": {
+    "last_price": 950.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "sportivo tijdritfiets - compleet en in uitmuntende staat (m2462306127) — fietsen | racefietsen — 2dehands",
+    "last_location": "Ieper",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2462238562-n7even-tijdritfiets-triathlonfiets-incl-ffwd-f6r-zgan": {
+    "last_price": 1375.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "n7even tijdritfiets / triathlonfiets incl ffwd f6r - zgan (m2462238562) — fietsen | racefietsen — 2dehands",
+    "last_location": "Ieper",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2462341723-specialized-s-works-shiv-maat-m-ultegra-di2-12-speed": {
+    "last_price": 7800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "specialized s-works shiv – maat m – ultegra di2 12-speed (m2462341723) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
