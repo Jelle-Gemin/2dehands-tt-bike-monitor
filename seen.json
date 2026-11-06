@@ -4321,5 +4321,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2462520842-bmc-timemachine-02": {
+    "last_price": 1600.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "bmc timemachine 02 (m2462520842) — fietsen | racefietsen — 2dehands",
+    "last_location": "Evergem",
+    "last_location_raw": null,
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2462451138-specialized-s-works-sl8": {
+    "last_price": 5800.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "specialized s-works sl8 (m2462451138) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
