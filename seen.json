@@ -4365,5 +4365,38 @@
     "last_match": true,
     "last_reason": "match",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2462981876-s-works-tijdritfiets": {
+    "last_price": 1500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "s-works tijdritfiets (m2462981876) — fietsen | racefietsen — 2dehands",
+    "last_location": "Gent",
+    "last_location_raw": null,
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2463152274-argon18-e-119-tri-disc-2024-force-axs-powermeter-maat-m": {
+    "last_price": 6495.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "argon18 e-119 tri disc 2024| force axs + powermeter | maat m (m2463152274) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2462984587-gespecialiseerde-alias-pro-tri": {
+    "last_price": 600.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "gespecialiseerde alias pro tri (m2462984587) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "bullingen",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
