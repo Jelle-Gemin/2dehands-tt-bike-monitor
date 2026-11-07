@@ -4354,5 +4354,16 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2462795045-n7even-tijdritfiets-triathlonfiets-incl-ffwd-f6r-zgan": {
+    "last_price": 1375.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "n7even tijdritfiets / triathlonfiets incl. ffwd f6r - zgan (m2462795045) — fietsen | racefietsen — 2dehands",
+    "last_location": "Ieper",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
   }
 }
