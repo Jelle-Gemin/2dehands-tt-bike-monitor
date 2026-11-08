@@ -4398,5 +4398,71 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2463472050-s-works-shiv-tt-tijdritfiets-56-dura-ace-di2-roval-wielen": {
+    "last_price": 3250.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "s-works shiv tt tijdritfiets 56 dura ace di2 roval wielen (m2463472050) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2463551378-wilier-turbine-tt-shimano-dura-ace-en-ultegra-maat-l": {
+    "last_price": 4900.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "wilier turbine tt shimano dura-ace en ultegra / maat l (m2463551378) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2463463889-velo-orbea-triathlon": {
+    "last_price": 3300.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "vélo orbea triathlon (m2463463889) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2463594561-orbea-ordu": {
+    "last_price": 5500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "orbea ordu (m2463594561) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2463477631-van-rysel-rcr-f-pro": {
+    "last_price": 4500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "van rysel | rcr-f pro (m2463477631) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2463058492-canyon-speedmax-cf-7-axs-medium-2024": {
+    "last_price": 4500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "canyon speedmax cf 7 axs medium 2024 (m2463058492) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
