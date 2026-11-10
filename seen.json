@@ -4464,5 +4464,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2464184865-tijdritfiets-willier-triestina-maat-l": {
+    "last_price": 2300.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets willier triestina - maat l (m2464184865) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2464185897-tt-bike-stevens-trofeo": {
+    "last_price": 1150.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tt bike stevens trofeo (m2464185897) — fietsen | racefietsen — 2dehands",
+    "last_location": "Gistel+Deel Westkerke",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
   }
 }
