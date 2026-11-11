@@ -4508,5 +4508,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2464555554-tijdritfiets-basso-maat-large": {
+    "last_price": 875.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets basso , maat large (m2464555554) — fietsen | racefietsen — 2dehands",
+    "last_location": "Zele+Deel Lokeren",
+    "last_location_raw": null,
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": true
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2464469405-tijdrit-triatlon-fiets-argon-18-e-112-carbon": {
+    "last_price": 2500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdrit/triatlon fiets argon 18 e-112 carbon (m2464469405) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
