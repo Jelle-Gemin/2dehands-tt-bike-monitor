@@ -4563,5 +4563,27 @@
     "last_match": true,
     "last_reason": "match",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2464810800-cervelo-p5-tijdrit-triathlon-fiets-mt-54-56": {
+    "last_price": 3750.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cervelo p5 tijdrit/ triathlon fiets mt. 54/56 (m2464810800) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2464913464-triatlonfiets-ku-cycle-2026-medium": {
+    "last_price": 5500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "triatlonfiets - ku cycle 2026 - medium (m2464913464) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
