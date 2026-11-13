@@ -4618,5 +4618,60 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2465420542-tijdritfiets-bmc-timemachine-two-sm-2020": {
+    "last_price": 2600.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets - bmc timemachine two sm 2020 (m2465420542) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2465488356-tijdritfiets-ridley-dean": {
+    "last_price": 6750.0,
+    "last_price_source": "search_card_price",
+    "last_title": "tijdritfiets ridley dean (m2465488356) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2465429687-felt-m-triathlonfiets-54-powermeter-di2-mag-zsm-we": {
+    "last_price": 2450.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "felt m triathlonfiets | 54 | powermeter di2, mag zsm we (m2465429687) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2465381429-tijdritfiets": {
+    "last_price": 6750.0,
+    "last_price_source": "search_card_price",
+    "last_title": "tijdritfiets (m2465381429) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2465408477-retro-koersfiets-55-single-speed-fixie": {
+    "last_price": 115.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "retro koersfiets (55) single speed “fixie” (m2465408477) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "sint-amands",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
