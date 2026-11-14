@@ -4673,5 +4673,16 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2465004299-canyon-speedmax-cf-8-0-triatlonfiets": {
+    "last_price": 1900.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "canyon speedmax cf 8.0 triatlonfiets (m2465004299) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
