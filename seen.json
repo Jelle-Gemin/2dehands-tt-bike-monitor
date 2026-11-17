@@ -4739,5 +4739,38 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2466763173-tijdritfiets-thompson-airstream-onberispelijke-staat": {
+    "last_price": 1650.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets thompson airstream - onberispelijke staat (m2466763173) — fietsen | racefietsen — 2dehands",
+    "last_location": "Kortrijk",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2466831194-giant-trinity-advanced-pro-tijdritfiets": {
+    "last_price": 3900.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "giant trinity advanced pro tijdritfiets (m2466831194) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2466931455-miniatuur-koersfietsjes-mountainbike-triatlonfiets-bm": {
+    "last_price": 11.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "miniatuur koersfietsjes - mountainbike - triatlonfiets - bm (m2466931455) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "mechelen-aan-de-maas",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
