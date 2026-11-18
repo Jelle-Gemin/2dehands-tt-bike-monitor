@@ -4794,5 +4794,16 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2467270324-merida-reacto-9000": {
+    "last_price": 4050.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "merida reacto 9000 (m2467270324) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
