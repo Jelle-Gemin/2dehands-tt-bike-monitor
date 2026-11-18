@@ -4772,5 +4772,27 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2466998200-felt-da-3-tt": {
+    "last_price": 3.0,
+    "last_price_source": "search_card_price",
+    "last_title": "felt da 3 tt (m2466998200) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "mol",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2466482870-s-works-venge-maat-s": {
+    "last_price": 1050.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "s-works venge maat s (m2466482870) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "kemzeke",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
