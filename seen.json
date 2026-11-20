@@ -4860,5 +4860,27 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2468147883-ridley-dean-fast-tt-bike": {
+    "last_price": 2950.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "ridley dean fast tt bike (m2468147883) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2468183524-isaac-boson-carbon-racefiets-maat-l-shimano-105": {
+    "last_price": 1050.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "isaac boson carbon racefiets maat l shimano 105 (m2468183524) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "mouscron",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
