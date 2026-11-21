@@ -4882,5 +4882,60 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2468352176-canyon-cf-slx-8-ultegra-di2-maat-m": {
+    "last_price": 6500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "canyon cf slx 8 ultegra di2 maat m (m2468352176) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2468321247-ridley-dean-ultegra-carbon-tijdritfiets-maat-l-powermeter": {
+    "last_price": 1200.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "ridley dean ultegra carbon tijdritfiets maat l powermeter (m2468321247) — fietsen | racefietsen — 2dehands",
+    "last_location": "Oostende Zandvoorde +Oostende",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": true
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2468333368-tijdritfiets-thompson-aistream-in-onberispelijke-staat": {
+    "last_price": 1600.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tijdritfiets thompson aistream in onberispelijke staat! (m2468333368) — fietsen | racefietsen — 2dehands",
+    "last_location": "Kortrijk",
+    "last_location_raw": null,
+    "last_province": "West-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2468287743-cervelo-s5-triatlon-aerobars": {
+    "last_price": 150.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cervelo s5 triatlon aerobars (m2468287743) — fietsen | racefietsen — 2dehands",
+    "last_location": "Deinze",
+    "last_location_raw": null,
+    "last_province": "Oost-Vlaanderen",
+    "last_match": true,
+    "last_reason": "match",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2468395861-canyon-aeroad-maat-xl-krasvrij": {
+    "last_price": 3100.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "canyon aeroad maat xl - krasvrij (m2468395861) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
