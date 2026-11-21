@@ -4937,5 +4937,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2468470100-giant-trinity-advanced-pro-carbon-tijdritfiets-ultegra-di2": {
+    "last_price": 4000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "giant trinity advanced pro carbon tijdritfiets – ultegra di2 (m2468470100) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2468512591-canyon-aeroad-cf-slx": {
+    "last_price": 1250.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "canyon aeroad cf slx (m2468512591) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "lommel",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
