@@ -4959,5 +4959,38 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2468637960-stopzetting-collectie-retro-fietsen-materiaal": {
+    "last_price": 1.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "stopzetting collectie retro fietsen/materiaal (m2468637960) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "veerle",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2468751212-cannondale-superslice-tt-bike": {
+    "last_price": 6000.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cannondale superslice tt bike (m2468751212) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2468800347-tt-fiets-volwassene-of-tiener": {
+    "last_price": 150.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "tt-fiets (volwassene of tiener) (m2468800347) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "tervuren",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
