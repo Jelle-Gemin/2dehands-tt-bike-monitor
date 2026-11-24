@@ -5003,5 +5003,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2469587551-pinarello-bolide-f-tt-550-tijdritfiets-sram-red": {
+    "last_price": 5500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "pinarello bolide f tt 550 tijdritfiets- sram red (m2469587551) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2469584155-s-works-shiv-tt-tijdritfiets-triatlonfiets-maat-xs": {
+    "last_price": 3500.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "s-works shiv tt tijdritfiets/ triatlonfiets maat xs (m2469584155) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
