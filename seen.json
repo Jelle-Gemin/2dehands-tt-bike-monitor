@@ -5036,5 +5036,27 @@
     "last_match": false,
     "last_reason": "boven_budget",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2470182281-stopzetting-grote-retro-koersfiets-collectie": {
+    "last_price": 1.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "stopzetting grote retro koersfiets collectie (m2470182281) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "eindhout",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2466998200-felt-da3-tijdritfiets-triatlon-maat-54-srm-powermeter": {
+    "last_price": 900.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "felt da3 tijdritfiets / triatlon (maat 54) – srm powermeter, (m2466998200) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "mol",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
