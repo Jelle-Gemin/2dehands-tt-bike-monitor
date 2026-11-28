@@ -5058,5 +5058,27 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2470700516-cervelo-p-series-56-sram-force-e1-axs-powermeter-nieuw": {
+    "last_price": 7499.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "cervélo p-series 56 | sram force e1 axs | powermeter | nieuw (m2470700516) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2470626337-velo-de-triathlon-granville": {
+    "last_price": 900.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "vélo de triathlon granville (m2470626337) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "olloy-sur-viroin",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
   }
 }
