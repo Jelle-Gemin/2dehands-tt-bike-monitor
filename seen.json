@@ -5080,5 +5080,38 @@
     "last_match": false,
     "last_reason": "buiten_regio",
     "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2471062446-orbea-ordu-m-l-shimano-105-di2-ultegra-c60-carbon": {
+    "last_price": 5250.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "orbea ordu m-l – shimano 105 di2 – ultegra c60 carbon (m2471062446) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2471151573-scott-plasma-20-full-carbon": {
+    "last_price": 1200.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "scott plasma 20 - full carbon (m2471151573) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": "schoten",
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "buiten_regio",
+    "last_has_power_meter": false
+  },
+  "https://www.2dehands.be/v/fietsen-en-brommers/fietsen-racefietsen/m2471043698-canyon-aeroad-cfr-frame-extra-s": {
+    "last_price": 2900.0,
+    "last_price_source": "jsonld_offers",
+    "last_title": "canyon aeroad cfr frame + extra’s (m2471043698) — fietsen | racefietsen — 2dehands",
+    "last_location": null,
+    "last_location_raw": null,
+    "last_province": null,
+    "last_match": false,
+    "last_reason": "boven_budget",
+    "last_has_power_meter": false
   }
 }
